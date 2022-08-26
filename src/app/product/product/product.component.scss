@@ -1,0 +1,130 @@
+table {
+    width: 100%;
+  }
+  
+  .mat-form-field {
+    font-size: 14px;
+    width: 100%;
+  }
+  
+  td, th {
+    width: 25%;
+    color: black;
+    background-color: rgb(250, 240, 240);
+  }
+#mod{
+    top: 50%;
+    left: 50%;
+    transform: translate(-45%,-45%);
+    text-align: center;
+    position: absolute;
+}
+th{
+    background-color: rgb(184, 244, 111);
+    text-align: center;
+    border-color: rgb(149, 7, 7);
+}
+td{
+    border-bottom: 1px;
+    border-color: rgb(255, 255, 255);
+}
+button{
+    margin: 5px;
+}
+.btn-close{
+  background-color: red;
+}
+.btn-warning{
+float: left;
+width: 95px;
+padding: 0%;
+margin-top: 4px;
+margin-bottom: 4px;
+}
+.btn-danger{
+    float: left;
+    width: 95px;
+    padding: 0%;
+    margin-top: 4px;
+    margin-bottom: 4px;
+    }
+.btn-primary{
+    width: 200px;
+    
+    }
+@media screen and(max-width:500px) {
+    
+        table {
+            width: 100%;
+            height: 100%;
+            
+          }
+          
+          .mat-form-field {
+            font-size: 14px;
+            width: 100%;
+          }
+          
+          td, th {
+            
+            color: rgb(54, 6, 6);
+            background-color: rgb(250, 240, 240);
+          }
+        #mod{
+            top: 50%;
+            left: 50%;
+            transform: translate(-45%,-45%);
+            text-align: center;
+            position: absolute;
+        }
+        th{
+            background-color: rgb(184, 244, 111);
+            text-align: center;
+            border-color: rgb(149, 7, 7);
+            
+        }
+        td{
+           
+            border-bottom: 1px;
+            border-color: rgb(255, 255, 255);
+        }
+        button{
+            margin: 5px;
+        }
+        .btn-close{
+          background-color: red;
+        }
+        .btn-warning{
+        float: left;
+        width: 49px;
+        padding: 0;
+        margin: 0;
+        }
+        .btn-danger{
+            float: right;
+            width: 49px;
+            padding: 0;
+            margin: 0;
+            }
+       .btn-primary{
+            width: 102px;
+            padding: 0;
+            
+            }
+       .modal{
+                border-radius: none;
+                width: 400px;
+              }         
+    }
+    @media screen and(max-width:400px){
+     .mat-elevation-z8{
+    width: 338px;
+     }
+     #field{
+      width: 338px;
+     }
+     .fade{
+      width: 90%;
+     }
+    }
+   

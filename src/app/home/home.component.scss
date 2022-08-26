@@ -1,0 +1,248 @@
+@media screen and(min-width:1100px) {
+    .example-container {
+        width: 120px;
+        height: 100%;
+        clear: none;
+       
+        position: fixed;
+    }
+    
+    .side_nav {
+        width: 100%;
+    
+    }
+    
+    .outlet {
+    
+        padding: 1px;
+        width: 90%;
+        float: right;
+        margin: 5px;
+    }
+    
+    .s {
+        position: relative;
+        top: 5%;
+    }
+    
+    mat-toolbar {
+        position: fixed;
+        background-color: rgb(85, 138, 69);
+        height: 9%;
+        z-index: 2;
+    }
+    .buttons1>div{
+       margin: 10px;
+       margin-top: 30px;
+       color: red;
+       box-shadow:0px 2px 15px 2px pink;
+       text-align: center;
+    
+    }
+    
+}
+
+@media screen and(max-width:500px) {
+
+    .example-container {
+        width: 15%;
+        height: 100%;
+        clear: none;
+        float: left;
+        display: none;
+    }
+
+    .side_nav {
+        width: 100%;
+
+    }
+
+
+    .outlet {
+        
+        margin: 12px;
+        width: 95%;
+        float: right;
+    }
+
+    .s {
+        position: relative;
+        top: 7%;
+    }
+
+    mat-toolbar {
+        position: fixed;
+        background-color: rgb(85, 138, 69);
+        height: 5%;
+        z-index: 2;
+    }
+
+    span {
+        color: #000;
+    }
+
+    .buttons {
+        width: 100%;
+        top: 5%;
+        color: #000;
+        position: fixed;
+        z-index: 1;
+        background-color: rgb(255, 255, 255);
+        box-shadow:0px 2px 15px 2px pink;
+
+    }
+    .buttons>span{
+        margin-left:3%;
+
+    }
+}
+@media screen and(min-width:500px)and(max-width:750px){
+   
+    .example-container {
+        width: 15%;
+        height: 100%;
+        clear: none;
+        float: left;
+        display: none;
+    }
+
+    .side_nav {
+        width: 100%;
+
+    }
+
+    .outlet {
+        
+        margin: 12px;
+        width: 95%;
+        float: left;
+    }
+
+    .s {
+        position: relative;
+        top: 10%;
+    }
+
+    mat-toolbar {
+        position: fixed;
+        background-color: rgb(85, 138, 69);
+        height: 5%;
+        z-index: 2;
+    }
+
+    span {
+        color: #000;
+    }
+
+    .buttons {
+        height: 5%;
+        width: 100%;
+        top: 5%;
+        color: #000;
+        position: fixed;
+        z-index: 1;
+        background-color: rgb(255, 255, 255);
+        box-shadow:0px 0px 10px 10px pink;
+    }
+    .buttons>span{
+        margin-left: 7%;
+    }
+}
+@media screen and(width:640px)and(height:360px){
+    .example-container {
+        width: 15%;
+        height: 100%;
+        clear: none;
+        float: left;
+        display: none;
+    }
+
+    .side_nav {
+        width: 100%;
+
+    }
+
+    .outlet {
+
+        margin: 12px;
+        width: 99%;
+        float: left;
+    }
+
+    .s {
+        position: relative;
+        top:50px;
+    }
+
+    mat-toolbar {
+        position: fixed;
+        background-color: rgb(85, 138, 69);
+        height: 33px;
+        z-index: 2;
+        
+    }
+
+    span {
+        color: #000;
+    }
+
+    .buttons {
+        height: 25px;
+        width: 100%;
+        top: 34px;
+        color: #000;
+        position: fixed;
+        z-index: 1;
+        background-color: rgb(255, 255, 255);
+        box-shadow:0px 2px 10px 10px pink;
+
+    }
+    .buttons>span{
+        margin-left: 40px;
+
+    }
+}
+@media screen and(min-width:750px)and(max-width:1100px){
+   
+    .example-container {
+        width: 120px;
+        height: 100%;
+        clear: none;
+       
+        position: fixed;
+    }
+    
+    .side_nav {
+        width: 100%;
+    
+    }
+    
+    .outlet {
+    
+        padding: 1px;
+        width: 80%;
+        float: right;
+        margin: 15px;
+    }
+    
+    .s {
+        position: relative;
+        top: 5%;
+    }
+    
+    mat-toolbar {
+        position: fixed;
+        background-color: rgb(85, 138, 69);
+        height: 9%;
+        z-index: 2;
+    }
+    .buttons1>div{
+       margin: 10px;
+       margin-top: 30px;
+       color: red;
+       box-shadow:0px 2px 15px 2px pink;
+       text-align: center;
+    
+    }
+    
+}
