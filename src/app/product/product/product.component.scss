@@ -40,6 +40,9 @@ width: 95px;
 padding: 0%;
 margin-top: 4px;
 margin-bottom: 4px;
+border: none;
+background-color: aliceblue;
+box-shadow:1px 2px 15px 1px rgb(225, 240, 171);
 }
 .btn-danger{
     float: left;
@@ -47,11 +50,22 @@ margin-bottom: 4px;
     padding: 0%;
     margin-top: 4px;
     margin-bottom: 4px;
+    background-color: rgb(255, 40, 40);
+    box-shadow:1px 2px 15px 1px rgb(165, 163, 163);
     }
 .btn-primary{
     width: 200px;
-    
+    background-color: rgb(76, 29, 247);
+    box-shadow:1px 2px 15px 1px rgb(12, 23, 243);
     }
+    .modal-footer>.btn-primary{
+      font-size: small;
+      padding: 0;
+      height: 40px;
+      width: 100px;
+      background-color: rgb(76, 29, 247);
+      box-shadow:1px 2px 15px 1px rgb(12, 23, 243);
+      }
 @media screen and(max-width:500px) {
     
         table {

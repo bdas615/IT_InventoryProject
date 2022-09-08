@@ -2,99 +2,21 @@
   "product": [
     {
       "productName": "dfssf",
-      "OwnerName": "dfssf",
-      "productLocationName": "mnbkjg",
-      "id": 11
-    },
-    {
-      "productName": "jfkjd",
-      "OwnerName": "jkjfdl",
-      "productLocationName": "jklfdj",
-      "id": 12
-    },
-    {
-      "productName": "dfssf",
-      "OwnerName": "mnbkjg",
-      "productLocationName": "gfhgvhv",
-      "id": 13
-    },
-    {
-      "productName": "dfssf",
-      "OwnerName": "gfhgvhv",
-      "productLocationName": "jkh",
-      "id": 14
-    },
-    {
-      "productName": "dfssf",
-      "OwnerName": "gfhgvhv",
-      "productLocationName": "mnbkj",
-      "id": 15
-    },
-    {
-      "productName": "dfssf",
       "OwnerName": "afs",
       "productLocationName": "mnbkj",
       "id": 16
     },
     {
-      "productName": "",
-      "OwnerName": "",
-      "productLocationName": "",
+      "productName": "desktop",
+      "OwnerName": "abhishek",
+      "productLocationName": "varanasi",
       "id": 17
     },
     {
-      "productName": "",
-      "OwnerName": "",
-      "productLocationName": "",
+      "productName": "Leptop",
+      "OwnerName": "abhishek",
+      "productLocationName": "maimi",
       "id": 18
-    },
-    {
-      "productName": "",
-      "OwnerName": "",
-      "productLocationName": "",
-      "id": 19
-    },
-    {
-      "productName": "",
-      "OwnerName": "",
-      "productLocationName": "",
-      "id": 20
-    },
-    {
-      "productName": "",
-      "OwnerName": "",
-      "productLocationName": "",
-      "id": 21
-    },
-    {
-      "productName": "",
-      "OwnerName": "",
-      "productLocationName": "",
-      "id": 22
-    },
-    {
-      "productName": "",
-      "OwnerName": "",
-      "productLocationName": "",
-      "id": 23
-    },
-    {
-      "productName": "",
-      "OwnerName": "",
-      "productLocationName": "",
-      "id": 24
-    },
-    {
-      "productName": "",
-      "OwnerName": "",
-      "productLocationName": "",
-      "id": 25
-    },
-    {
-      "productName": "",
-      "OwnerName": "",
-      "productLocationName": "",
-      "id": 26
     }
   ],
   "posts": [
