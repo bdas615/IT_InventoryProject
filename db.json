@@ -1,22 +1,22 @@
 {
   "product": [
     {
-      "productName": "dfssf",
-      "OwnerName": "afs",
-      "productLocationName": "mnbkj",
-      "id": 16
-    },
-    {
-      "productName": "desktop",
-      "OwnerName": "abhishek",
-      "productLocationName": "varanasi",
-      "id": 17
-    },
-    {
-      "productName": "Leptop",
-      "OwnerName": "abhishek",
-      "productLocationName": "maimi",
-      "id": 18
+      "devType": "dfssf",
+      "DevTypeOther": "dfssf",
+      "serial": "mnbkjg",
+      "owner": "afs",
+      "make": "afs",
+      "model": "mnbkjg",
+      "location": "gfhgvhv",
+      "purchase_date": "gfhgvhv",
+      "warrantyExpDate": "gfhgvhv",
+      "size": "mnbkj",
+      "toner": "mnbkj",
+      "value": "jkh",
+      "MacAddress": "mnbkj",
+      "IPAddress": "jkh",
+      "CellNumber": "dfssf",
+      "id": 1
     }
   ],
   "posts": [

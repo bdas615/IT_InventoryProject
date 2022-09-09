@@ -1,13 +1,12 @@
-
 <ng-container *ngIf="condition.length !=0">
-    <mat-form-field id="field" appearance="standard">
+    <mat-form-field style="width:100%;" id="field" appearance="standard">
         <mat-label>Search</mat-label>
         <input matInput (keyup)="applyFilter($event)" placeholder="Ex. Laptop…" #input>
     </mat-form-field>
 
     <!-- Edit Model -->
     <form [formGroup]="editDataValues" (ngSubmit)="updateData(1)">
-        <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel" >
+        <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel">
             <div class="modal-dialog">
                 <div class="modal-content">
                     <div class="modal-header">
@@ -15,38 +14,121 @@
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body">
+
                         
+
+
                         <div class="mb-3">
-                            <label for="exampleFormControlInput1" class="form-label">Product Name</label>
-                            <input formControlName="productName"  value={{a}}  type="email" class="form-control" id="exampleFormControlInput1"
-                                placeholder="Laptop….">
+                            <label for="exampleFormControlInput1" class="form-label">devType</label>
+                           &nbsp; <span *ngIf="devTypefun &&devTypefun.invalid">required</span>
+                            <input formControlName="devType" type="email" class="form-control"
+                                id="exampleFormControlInput1" placeholder="Laptop….">
+                                
                         </div>
                         <div class="mb-3">
-                            <label for="exampleFormControlInput1" class="form-label">Owner Name</label>
-                            <input formControlName="OwnerName"  type="email" [value]="b" class="form-control" id="exampleFormControlInput1"
-                                placeholder="BI Employees">
+                            <label for="exampleFormControlInput1" class="form-label">DevTypeOther</label>
+                            &nbsp; <span *ngIf="DevTypeOtherfun && DevTypeOtherfun.invalid">required</span>
+                            <input formControlName="DevTypeOther" type="email" class="form-control"
+                                id="exampleFormControlInput1" placeholder="Laptop….">
                         </div>
                         <div class="mb-3">
-                            <label for="exampleFormControlInput1" class="form-label">Location</label>
-                            <input formControlName="productLocationName" [value]="c"  type="email" class="form-control" id="exampleFormControlInput1"
-                                placeholder="Bi Offices">
+                            <label for="exampleFormControlInput1" class="form-label">serial</label>
+                            &nbsp; <span *ngIf="serialfun && serialfun.invalid">required</span>
+                            <input formControlName="serial" type="email" class="form-control"
+                                id="exampleFormControlInput1" placeholder="Laptop….">
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleFormControlInput1" class="form-label">owner</label>
+                            &nbsp; <span *ngIf="ownerfun &&ownerfun.invalid">required</span>
+                            <input formControlName="owner" type="email" class="form-control"
+                                id="exampleFormControlInput1" placeholder="Laptop….">
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleFormControlInput1" class="form-label">make</label>
+                            &nbsp; <span *ngIf="makefun && makefun.invalid">required</span>
+                            <input formControlName="make" type="email" class="form-control"
+                                id="exampleFormControlInput1" placeholder="Laptop….">
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleFormControlInput1" class="form-label">model</label>
+                            &nbsp; <span *ngIf="modelfun && modelfun.invalid">required</span>
+                            <input formControlName="model" type="email" class="form-control"
+                                id="exampleFormControlInput1" placeholder="Laptop….">
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleFormControlInput1" class="form-label">location</label>
+                            &nbsp; <span *ngIf="locationfun && locationfun.invalid">required</span>
+                            <input formControlName="location" type="email" class="form-control"
+                                id="exampleFormControlInput1" placeholder="Laptop….">
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleFormControlInput1" class="form-label">purchase_date</label>
+                            &nbsp; <span *ngIf="purchase_datefun && purchase_datefun.invalid">required</span>
+                            <input formControlName="purchase_date" type="email" class="form-control"
+                                id="exampleFormControlInput1" placeholder="Laptop….">
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleFormControlInput1" class="form-label">warrantyExpDate</label>
+                            &nbsp; <span *ngIf="warrantyExpDatefun && warrantyExpDatefun.invalid">required</span>
+                            <input formControlName="warrantyExpDate" type="email" class="form-control"
+                                id="exampleFormControlInput1" placeholder="Laptop….">
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleFormControlInput1" class="form-label">size</label>
+                            &nbsp; <span *ngIf="sizefun && sizefun.invalid">required</span>
+                            <input formControlName="size" type="email" class="form-control"
+                                id="exampleFormControlInput1" placeholder="Laptop….">
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleFormControlInput1" class="form-label">toner</label>
+                            &nbsp; <span *ngIf="tonerfun && tonerfun.invalid">required</span>
+                            <input formControlName="toner" type="email" class="form-control"
+                                id="exampleFormControlInput1" placeholder="Laptop….">
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleFormControlInput1" class="form-label">value</label>
+                            &nbsp; <span *ngIf="valuefun && valuefun.invalid">required</span>
+                            <input formControlName="value" type="email" class="form-control"
+                                id="exampleFormControlInput1" placeholder="Laptop….">
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleFormControlInput1" class="form-label">MacAddress</label>
+                            &nbsp; <span *ngIf="MacAddressfun && MacAddressfun.invalid">required</span>
+                            <input formControlName="MacAddress" type="email" class="form-control"
+                                id="exampleFormControlInput1" placeholder="Laptop….">
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleFormControlInput1" class="form-label">IPAddress</label>
+                            &nbsp; <span *ngIf="IPAddressfun && IPAddressfun.invalid">required</span>
+                            <input formControlName="IPAddress" type="email" class="form-control"
+                                id="exampleFormControlInput1" placeholder="Laptop….">
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleFormControlInput1" class="form-label">CellNumber</label>
+                            &nbsp; <span *ngIf="CellNumberfun &&CellNumberfun.invalid">required</span>
+                            <input formControlName="CellNumber" type="email" class="form-control"
+                                id="exampleFormControlInput1" placeholder="Laptop….">
                         </div>
                     </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                        <button type="button" class="btn btn-primary" data-bs-dismiss="modal" type="submit" value="Submit">Save changes</button>
+                        <button type="button"[disabled]="editDataValues.invalid" class="btn btn-primary" data-bs-dismiss="modal" type="submit"
+                            value="Submit">Save changes</button>
                     </div>
+                    </div>
+                   
                 </div>
             </div>
-        </div>
-        </form>
+        
+    </form>
 
-        <!-- button for add new data -->
+
     <div>
-     
+
         <!-- add model -->
         <form [formGroup]="userLogin" (ngSubmit)="submitUser()">
-            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
                 <div class="modal-dialog">
                     <div class="modal-content">
                         <div class="modal-header">
@@ -54,76 +136,156 @@
                             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
                         <div class="modal-body">
+                         
+    
                             <div class="mb-3">
-                                <label for="exampleFormControlInput1" class="form-label">Product Name</label>
-                                <input formControlName="productName" type="email" class="form-control" id="exampleFormControlInput1"
-                                    placeholder="Laptop….">
-                                <!-- <p *ngIf="ng-invalid">requird</p> -->
+                                <label for="exampleFormControlInput1" class="form-label">devType</label>
+                               &nbsp; <span *ngIf="devTypefunction &&devTypefunction.invalid">required</span>
+                                <input  formControlName="devType" type="email" class="form-control"
+                                    id="exampleFormControlInput1" placeholder="Laptop….">
+                                    
                             </div>
                             <div class="mb-3">
-                                <label for="exampleFormControlInput1" class="form-label">Owner Name</label>
-                                <input formControlName="OwnerName" type="email" class="form-control" id="exampleFormControlInput1"
-                                    placeholder="BI Employees">
+                                <label for="exampleFormControlInput1" class="form-label">DevTypeOther</label>
+                                &nbsp; <span *ngIf="DevTypeOtherfunction && DevTypeOtherfunction.invalid">required</span>
+                                <input formControlName="DevTypeOther" type="email" class="form-control"
+                                    id="exampleFormControlInput1" placeholder="Laptop….">
                             </div>
                             <div class="mb-3">
-                                <label for="exampleFormControlInput1" class="form-label">Location</label>
-                                <input formControlName="productLocationName" type="email" class="form-control" id="exampleFormControlInput1"
-                                    placeholder="Bi Offices">
+                                <label for="exampleFormControlInput1" class="form-label">serial</label>
+                                &nbsp; <span *ngIf="serialfunction && serialfunction.invalid">required</span>
+                                <input formControlName="serial" type="email" class="form-control"
+                                    id="exampleFormControlInput1" placeholder="Laptop….">
+                            </div>
+                            <div class="mb-3">
+                                <label for="exampleFormControlInput1" class="form-label">owner</label>
+                                &nbsp; <span *ngIf="ownerfunction &&ownerfunction.invalid">required</span>
+                                <input formControlName="owner" type="email" class="form-control"
+                                    id="exampleFormControlInput1" placeholder="Laptop….">
+                            </div>
+                            <div class="mb-3">
+                                <label for="exampleFormControlInput1" class="form-label">make</label>
+                                &nbsp; <span *ngIf="makefunction && makefunction.invalid">required</span>
+                                <input formControlName="make" type="email" class="form-control"
+                                    id="exampleFormControlInput1" placeholder="Laptop….">
+                            </div>
+                            <div class="mb-3">
+                                <label for="exampleFormControlInput1" class="form-label">model</label>
+                                &nbsp; <span *ngIf="modelfunction && modelfunction.invalid">required</span>
+                                <input formControlName="model" type="email" class="form-control"
+                                    id="exampleFormControlInput1" placeholder="Laptop….">
+                            </div>
+                            <div class="mb-3">
+                                <label for="exampleFormControlInput1" class="form-label">location</label>
+                                &nbsp; <span *ngIf="locationfunction && locationfunction.invalid">required</span>
+                                <input formControlName="location" type="email" class="form-control"
+                                    id="exampleFormControlInput1" placeholder="Laptop….">
+                            </div>
+                            <div class="mb-3">
+                                <label for="exampleFormControlInput1" class="form-label">purchase_date</label>
+                                &nbsp; <span *ngIf="purchase_datefunction && purchase_datefunction.invalid">required</span>
+                                <input formControlName="purchase_date" type="email" class="form-control"
+                                    id="exampleFormControlInput1" placeholder="Laptop….">
+                            </div>
+                            <div class="mb-3">
+                                <label for="exampleFormControlInput1" class="form-label">warrantyExpDate</label>
+                                &nbsp; <span *ngIf="warrantyExpDatefunction && warrantyExpDatefunction.invalid">required</span>
+                                <input formControlName="warrantyExpDate" type="email" class="form-control"
+                                    id="exampleFormControlInput1" placeholder="Laptop….">
+                            </div>
+                            <div class="mb-3">
+                                <label for="exampleFormControlInput1" class="form-label">size</label>
+                                &nbsp; <span *ngIf="sizefunction && sizefunction.invalid">required</span>
+                                <input formControlName="size" type="email" class="form-control"
+                                    id="exampleFormControlInput1" placeholder="Laptop….">
+                            </div>
+                            <div class="mb-3">
+                                <label for="exampleFormControlInput1" class="form-label">toner</label>
+                                &nbsp; <span *ngIf="tonerfunction && tonerfunction.invalid">required</span>
+                                <input formControlName="toner" type="email" class="form-control"
+                                    id="exampleFormControlInput1" placeholder="Laptop….">
+                            </div>
+                            <div class="mb-3">
+                                <label for="exampleFormControlInput1" class="form-label">value</label>
+                                &nbsp; <span *ngIf="valuefunction && valuefunction.invalid">required</span>
+                                <input formControlName="value" type="email" class="form-control"
+                                    id="exampleFormControlInput1" placeholder="Laptop….">
+                            </div>
+                            <div class="mb-3">
+                                <label for="exampleFormControlInput1" class="form-label">MacAddress</label>
+                                &nbsp; <span *ngIf="MacAddressfunction && MacAddressfunction.invalid">required</span>
+                                <input formControlName="MacAddress" type="email" class="form-control"
+                                    id="exampleFormControlInput1" placeholder="Laptop….">
+                            </div>
+                            <div class="mb-3">
+                                <label for="exampleFormControlInput1" class="form-label">IPAddress</label>
+                                &nbsp; <span *ngIf="IPAddressfunction && IPAddressfunction.invalid">required</span>
+                                <input formControlName="IPAddress" type="email" class="form-control"
+                                    id="exampleFormControlInput1" placeholder="Laptop….">
+                            </div>
+                            <div class="mb-3">
+                                <label for="exampleFormControlInput1" class="form-label">CellNumber</label>
+                                &nbsp; <span *ngIf="CellNumberfunction &&CellNumberfunction.invalid">required</span>
+                                <input formControlName="CellNumber" type="email" class="form-control"
+                                    id="exampleFormControlInput1" placeholder="Laptop….">
                             </div>
                         </div>
                         <div class="modal-footer">
                             <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                            <button type="button" class="btn btn-primary" data-bs-dismiss="modal" type="submit" value="Submit">Save changes</button>
+                            <button type="button" [disabled]="userLogin.invalid" class="btn btn-primary" data-bs-dismiss="modal" type="submit"
+                                value="Submit">Save changes</button>
                         </div>
                     </div>
                 </div>
             </div>
-            </form>
+        </form>
     </div>
 
     <!-- material table for getting all data -->
-    <div class="mat-elevation-z8">
+    <div class="mat-elevation-z8" style="width:fit-content;">
         <table mat-table [dataSource]="dataSource" matSort>
 
-           
-            <!-- Progress Column -->
-            <ng-container matColumnDef="productName">
+
+            <!-- Display Product name-->
+            <ng-container matColumnDef="devType">
                 <th mat-header-cell *matHeaderCellDef mat-sort-header> Product Name </th>
-                <td mat-cell *matCellDef="let row"> {{row.productName}}</td>
+                <td mat-cell *matCellDef="let row"> {{row.devType}}</td>
             </ng-container>
 
-            <!-- Name Column -->
-            <ng-container matColumnDef="OwnerName">
+            <!-- Display Owner name-->
+            <ng-container matColumnDef="owner">
                 <th mat-header-cell *matHeaderCellDef mat-sort-header> Owner Name </th>
-                <td mat-cell *matCellDef="let row"> {{row.OwnerName}} </td>
+                <td mat-cell *matCellDef="let row"> {{row.owner}} </td>
             </ng-container>
 
-            <!-- Fruit Column -->
-            <ng-container matColumnDef="productLocationName">
+            <!-- Display Product location  name-->
+            <ng-container matColumnDef="location">
                 <th mat-header-cell *matHeaderCellDef mat-sort-header> Location </th>
-                <td mat-cell *matCellDef="let row"> {{row.productLocationName}} </td>
+                <td mat-cell *matCellDef="let row"> {{row.location}} </td>
             </ng-container>
-             <!-- Edit column for Edit any particular data -->
+            <!-- button for add new data -->
             <ng-container matColumnDef="Edit">
-                <th mat-header-cell *matHeaderCellDef >
+                <th mat-header-cell *matHeaderCellDef>
                     <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
                         Add new data
-                    </button>    
+                    </button>
                 </th>
                 <td mat-cell *matCellDef="let row">
+                    <!-- Edit column for Edit any particular data -->
                     <div>
-                        <button type="button"  class="btn btn-warning" (click)="editFun(row)" data-bs-toggle="modal" data-bs-target="#exampleModal1">
-                        Edit
+                        <button type="button" class="btn btn-warning" (click)="editFun(row)" data-bs-toggle="modal"
+                            data-bs-target="#exampleModal1">
+                            Edit
                         </button>
-                    
-                        <button type="button" (click)="deleteUser(row.id)" class="btn btn-danger"  >
+                        <!-- Delete column for Delete any particular data -->
+                        <button type="button" (click)="deleteUser(row.id)" class="btn btn-danger">
                             Delete
                         </button>
-                    </div>   
+                    </div>
                 </td>
             </ng-container>
-   
-            
+
+
 
             <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
             <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
@@ -133,7 +295,7 @@
                 <td class="mat-cell" colspan="4">No data matching the filter "{{input.value}}"</td>
             </tr>
         </table>
-        <mat-paginator [pageSizeOptions]="[5, 10, 25, 100]" aria-label="Select page of users"></mat-paginator>
+        <mat-paginator  id="paginator" [pageSizeOptions]="[5, 10, 25, 100]" aria-label="Select page of users"></mat-paginator>
     </div>
 </ng-container>
 
@@ -145,11 +307,11 @@
     <!-- Button trigger modal -->
     <div id="mod">
         <h4>There is no any data.</h4>
+        <img src="https://demo.learncab.com/assets/images/no-data-found.png" alt="">
         <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
             Add new data
         </button>
     </div>
-
     <!-- Modal -->
     <form [formGroup]="userLogin" (ngSubmit)="submitUser()">
         <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -160,29 +322,112 @@
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body">
+                        
+                        
+                       
+
+
                         <div class="mb-3">
-                            <label for="exampleFormControlInput1" class="form-label">Product Name</label>
-                            <input formControlName="productName" type="email" class="form-control" id="exampleFormControlInput1"
-                                placeholder="Laptop….">
+                            <label for="exampleFormControlInput1" class="form-label">devType</label>
+                           &nbsp; <span *ngIf="devTypefunction &&devTypefunction.invalid">required</span>
+                            <input formControlName="devType" type="email" class="form-control"
+                                id="exampleFormControlInput1" placeholder="Laptop….">
+                                
                         </div>
                         <div class="mb-3">
-                            <label for="exampleFormControlInput1" class="form-label">Owner Name</label>
-                            <input formControlName="OwnerName" type="email" class="form-control" id="exampleFormControlInput1"
-                                placeholder="BI Employees">
+                            <label for="exampleFormControlInput1" class="form-label">DevTypeOther</label>
+                            &nbsp; <span *ngIf="DevTypeOtherfunction && DevTypeOtherfunction.invalid">required</span>
+                            <input formControlName="DevTypeOther" type="email" class="form-control"
+                                id="exampleFormControlInput1" placeholder="Laptop….">
                         </div>
                         <div class="mb-3">
-                            <label for="exampleFormControlInput1" class="form-label">Location</label>
-                            <input formControlName="productLocationName" type="email" class="form-control" id="exampleFormControlInput1"
-                                placeholder="Bi Offices">
+                            <label for="exampleFormControlInput1" class="form-label">serial</label>
+                            &nbsp; <span *ngIf="serialfunction && serialfunction.invalid">required</span>
+                            <input formControlName="serial" type="email" class="form-control"
+                                id="exampleFormControlInput1" placeholder="Laptop….">
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleFormControlInput1" class="form-label">owner</label>
+                            &nbsp; <span *ngIf="ownerfunction &&ownerfunction.invalid">required</span>
+                            <input formControlName="owner" type="email" class="form-control"
+                                id="exampleFormControlInput1" placeholder="Laptop….">
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleFormControlInput1" class="form-label">make</label>
+                            &nbsp; <span *ngIf="makefunction && makefunction.invalid">required</span>
+                            <input formControlName="make" type="email" class="form-control"
+                                id="exampleFormControlInput1" placeholder="Laptop….">
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleFormControlInput1" class="form-label">model</label>
+                            &nbsp; <span *ngIf="modelfunction && modelfunction.invalid">required</span>
+                            <input formControlName="model" type="email" class="form-control"
+                                id="exampleFormControlInput1" placeholder="Laptop….">
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleFormControlInput1" class="form-label">location</label>
+                            &nbsp; <span *ngIf="locationfunction && locationfunction.invalid">required</span>
+                            <input formControlName="location" type="email" class="form-control"
+                                id="exampleFormControlInput1" placeholder="Laptop….">
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleFormControlInput1" class="form-label">purchase_date</label>
+                            &nbsp; <span *ngIf="purchase_datefunction && purchase_datefunction.invalid">required</span>
+                            <input formControlName="purchase_date" type="email" class="form-control"
+                                id="exampleFormControlInput1" placeholder="Laptop….">
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleFormControlInput1" class="form-label">warrantyExpDate</label>
+                            &nbsp; <span *ngIf="warrantyExpDatefunction && warrantyExpDatefunction.invalid">required</span>
+                            <input formControlName="warrantyExpDate" type="email" class="form-control"
+                                id="exampleFormControlInput1" placeholder="Laptop….">
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleFormControlInput1" class="form-label">size</label>
+                            &nbsp; <span *ngIf="sizefunction && sizefunction.invalid">required</span>
+                            <input formControlName="size" type="email" class="form-control"
+                                id="exampleFormControlInput1" placeholder="Laptop….">
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleFormControlInput1" class="form-label">toner</label>
+                            &nbsp; <span *ngIf="tonerfunction && tonerfunction.invalid">required</span>
+                            <input formControlName="toner" type="email" class="form-control"
+                                id="exampleFormControlInput1" placeholder="Laptop….">
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleFormControlInput1" class="form-label">value</label>
+                            &nbsp; <span *ngIf="valuefunction && valuefunction.invalid">required</span>
+                            <input formControlName="value" type="email" class="form-control"
+                                id="exampleFormControlInput1" placeholder="Laptop….">
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleFormControlInput1" class="form-label">MacAddress</label>
+                            &nbsp; <span *ngIf="MacAddressfunction && MacAddressfunction.invalid">required</span>
+                            <input formControlName="MacAddress" type="email" class="form-control"
+                                id="exampleFormControlInput1" placeholder="Laptop….">
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleFormControlInput1" class="form-label">IPAddress</label>
+                            &nbsp; <span *ngIf="IPAddressfunction && IPAddressfunction.invalid">required</span>
+                            <input formControlName="IPAddress" type="email" class="form-control"
+                                id="exampleFormControlInput1" placeholder="Laptop….">
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleFormControlInput1" class="form-label">CellNumber</label>
+                            &nbsp; <span *ngIf="CellNumberfunction &&CellNumberfunction.invalid">required</span>
+                            <input formControlName="CellNumber" type="email" class="form-control"
+                                id="exampleFormControlInput1" placeholder="Laptop….">
                         </div>
                     </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                        <button type="button" class="btn btn-primary" data-bs-dismiss="modal" type="submit" value="Submit">Save changes</button>
+                        <button type="button" [disabled]="userLogin.invalid" class="btn btn-primary" data-bs-dismiss="modal" type="submit"
+                            value="Submit">Save changes</button>
                     </div>
+                    </div>
+                    
                 </div>
             </div>
-        </div>
-        </form>
+        
+    </form>
 </ng-container>
-

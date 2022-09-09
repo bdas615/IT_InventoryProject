@@ -17,7 +17,8 @@ table {
     left: 50%;
     transform: translate(-45%,-45%);
     text-align: center;
-    position: absolute;
+    position:fixed ;
+    z-index: 100;
 }
 th{
     background-color: rgb(184, 244, 111);
@@ -89,7 +90,7 @@ box-shadow:1px 2px 15px 1px rgb(225, 240, 171);
             left: 50%;
             transform: translate(-45%,-45%);
             text-align: center;
-            position: absolute;
+            position: fixed;
         }
         th{
             background-color: rgb(184, 244, 111);
@@ -141,4 +142,20 @@ box-shadow:1px 2px 15px 1px rgb(225, 240, 171);
       width: 90%;
      }
     }
+    span{
+      color: red;
+    }
+    td:hover{
+      color: rgb(60, 4, 247);
+      font-size: large;
+    }
+    button:hover
+    {
+      font-size: large;
+    }
+    img{
+      width: 25%;
+      height: 25%;
+    }
+   
    
