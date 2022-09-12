@@ -10,10 +10,14 @@ import { MatPaginatorModule } from '@angular/material/paginator';
 import { MatSortModule } from '@angular/material/sort';
 import { MatTableModule } from '@angular/material/table';
 import {MatInputModule} from '@angular/material/input';
+import { ProductFormComponent } from './product-form/product-form.component';
+import { ProductEditComponent } from './product-edit/product-edit.component';
 
 @NgModule({
   declarations: [
-    ProductComponent
+    ProductComponent,
+    ProductFormComponent,
+    ProductEditComponent
   ],
   imports: [
     CommonModule,
