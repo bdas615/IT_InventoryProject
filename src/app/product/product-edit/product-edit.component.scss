@@ -1,36 +1,66 @@
-.outerDiv{
+.outerDiv {
     width: 48%;
     float: left;
     padding: 15px;
-    box-shadow:5px 5px 10px 0px rgb(211, 243, 226);
+    box-shadow: 5px 5px 10px 0px rgb(211, 243, 226);
     margin-bottom: 6px;
     height: 750px
-   
 }
-#outerDiv1{
+
+#outerDiv1 {
     background-color: rgb(150, 235, 186);
 }
-#outerDiv2{
+
+#outerDiv2 {
     background-color: rgb(232, 253, 237);
 }
 
-#exampleModalLabel{
-    width: 96%;float: left;
-    
-}
-#title{ 
+#exampleModalLabel {
     width: 96%;
-    background-color:rgb(184, 244, 111);
-    // box-shadow:0px 2px 15px 0px rgb(44, 6, 234);
-    box-shadow:0px 5px 5px 0px rgb(227, 232, 79);
-    
+    float: left;
+
 }
-span{
+
+#title {
+    width: 96%;
+    background-color: rgb(184, 244, 111);
+    // box-shadow:0px 2px 15px 0px rgb(44, 6, 234);
+    box-shadow: 0px 5px 5px 0px rgb(227, 232, 79);
+
+}
+
+span {
     color: red;
 }
-.modal-footer>button{
+
+.modal-footer>button {
     margin-left: 2%;
     font-size: xx-small;
     padding: none;
     width: fit-contents;
+}
+
+#alert_text {
+    background-color: rgb(20, 171, 111);
+    padding: 10px;
+    width: fit-content;
+    left: 40%;
+    top: 20%;
+    position: fixed;
+    color: beige;
+    box-shadow: 2px 2px 5px 1px rgb(183, 225, 66);
+}
+
+#alert_button {
+    width: fit-content;
+    background: none;
+    color: white;
+    border: 1px solid white;
+    float: right;
+}
+#alert_button:hover{
+    background-color: aqua;
+    color: red;
+    border-color: red;
+   
 }

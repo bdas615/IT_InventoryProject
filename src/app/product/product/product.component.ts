@@ -5,29 +5,18 @@ import {AfterViewInit, ViewChild} from '@angular/core';
 import {MatPaginator} from '@angular/material/paginator';
 import {MatSort} from '@angular/material/sort';
 import { ServiceService } from '../service.service';
-import { from, map } from 'rxjs';
+import { delay, from, map, timeInterval } from 'rxjs';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
 import { FormBuilder} from '@angular/forms';
 import { HttpClient } from '@angular/common/http';
 import { ActivatedRoute, Router } from '@angular/router';
 import { tap } from 'rxjs';
+
 export interface UserData {
-  id: number;
-  devType:string,
-  DevTypeOther:string,
-  serial:string,
-  owner:string,
-  make:string,
-  model:string,
-  location:string,
-  purchase_date:string,
-  warrantyExpDate:string,
-  size:string,
-  toner:string,
-  value:string,
-  MacAddress:string,
-  IPAddress:string,
-  CellNumber:string
+  DevId:string
+  DevType:string,
+  Owner:string,
+  Location:string,
 }
 @Component({
   selector: 'app-product',
@@ -43,23 +32,29 @@ export class ProductComponent implements OnInit, AfterViewInit{
    b:any;
    c:any;
    i!:number
-   
+   dd=true;
+   mm=false;
    deleteUser(id:any){
-    alert("you want to delete data");
-    this.htt.delete(`${"http://localhost:3000/product"}/${id}`).subscribe(res=>{ 
-      alert("data deleted")
-      window.location.reload();
-     
-    }) 
+    setTimeout(()=>{
+      this.htt.delete(`${"http://localhost:3000/product"}/${id}`).subscribe(res=>{ 
+      console.log(res)
+      this.dd=false;
+    this.mm=true;
+      }) 
+    },5000)
+   
   }
-  displayedColumns: string[] = [ 'devType', 'owner', 'location','Edit'];
+  alertfun(){
+    window.location.reload();
+  }
+  displayedColumns: string[] = [ 'DevType', 'Owner', 'Location','Edit'];
   dataSource: MatTableDataSource<UserData>;
   condition:any;
   @ViewChild(MatPaginator) paginator!: MatPaginator;
   @ViewChild(MatSort) sort!: MatSort;
 
   constructor(private htt:HttpClient,private activ:ActivatedRoute,
-    private builder:FormBuilder) {
+    private builder:FormBuilder,private rout:Router) {
       
     // Create 100 users
     this.dataSource = new MatTableDataSource();
@@ -72,8 +67,10 @@ export class ProductComponent implements OnInit, AfterViewInit{
   ngOnInit(): void {
   
    this.condition= this.activ.snapshot.data['data']
-  
+   this.condition=JSON.parse(this.condition)
+   console.log(this.condition)
    this.dataSource.data=this.condition;
+
    
  
   }

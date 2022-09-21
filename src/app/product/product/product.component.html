@@ -11,21 +11,21 @@
 
 
             <!-- Display Product name-->
-            <ng-container matColumnDef="devType">
+            <ng-container matColumnDef="DevType">
                 <th mat-header-cell *matHeaderCellDef mat-sort-header> Product Name </th>
-                <td mat-cell *matCellDef="let row"> {{row.devType}}</td>
+                <td mat-cell *matCellDef="let row"> {{row.DevType}}</td>
             </ng-container>
 
             <!-- Display Owner name-->
-            <ng-container matColumnDef="owner">
+            <ng-container matColumnDef="Owner">
                 <th mat-header-cell *matHeaderCellDef mat-sort-header> Owner Name </th>
-                <td mat-cell *matCellDef="let row" >{{row.owner}}</td>
+                <td mat-cell *matCellDef="let row" >{{row.Owner}}</td>
             </ng-container>
 
             <!-- Display Product location  name-->
-            <ng-container matColumnDef="location">
+            <ng-container matColumnDef="Location">
                 <th mat-header-cell *matHeaderCellDef mat-sort-header> Location </th>
-                <td mat-cell *matCellDef="let row"> {{row.location}} </td>
+                <td mat-cell *matCellDef="let row"> {{row.Location}} </td>
             </ng-container>
             <!-- button for add new data -->
             <ng-container matColumnDef="Edit">
@@ -37,11 +37,11 @@
                 <td mat-cell *matCellDef="let row">
                     <!-- Edit column for Edit any particular data -->
                     <div>
-                        <button type="button" class="btn btn-warning" routerLink="editFrom/{{row.id}}"  >
+                        <button type="button" class="btn btn-warning" routerLink="editFrom/{{row.DevId}}"  >
                             Edit
                         </button>
                         <!-- Delete column for Delete any particular data -->
-                        <button type="button" (click)="deleteUser(row.id)" class="btn btn-danger">
+                        <button type="button" (click)="deleteUser(row.DevId)" class="btn btn-danger"data-bs-toggle="modal" data-bs-target="#staticBackdrop">
                             Delete
                         </button>
                     </div>
@@ -76,3 +76,19 @@
         </button>
     </div>
    </ng-container>
+
+   
+<!-- alert -->
+<div    class="alert alert-danger " role="alert" class="modal fade" id="staticBackdrop" data-bs-backdrop="static">
+    <div class="modal-dialog" >
+    <div  class="modal-content" id="alert_text"[hidden]="dd" >
+    A simple success alert—check it out!<br><br>
+    <div  ><button type="button"id="alert_button"data-bs-dismiss="modal" aria-label="Close" (click)="alertfun()">ok</button>
+    </div> 
+</div>
+<div class="modal-content"  style="top:250px"[hidden]="mm">
+<mat-progress-bar color="accent" mode="indeterminate"></mat-progress-bar>
+</div>
+</div>
+</div>
+  

@@ -158,4 +158,28 @@ box-shadow:1px 2px 15px 1px rgb(225, 240, 171);
       height: 25%;
     }
    
+#alert_text {
+  background-color: rgb(20, 171, 111);
+  padding: 10px;
+  width: fit-content;
+  left: 40%;
+  top: 20%;
+  position: fixed;
+  color: beige;
+  box-shadow: 2px 2px 5px 1px rgb(183, 225, 66);
+}
+
+#alert_button {
+  width: fit-content;
+  background: none;
+  color: white;
+  border: 1px solid white;
+  float: right;
+}
+#alert_button:hover{
+  background-color: aqua;
+  color: red;
+  border-color: red;
+ 
+}
    

@@ -1,3 +1,17 @@
+<!-- alert -->
+<div    class="alert alert-danger " role="alert" class="modal fade" id="staticBackdrop" data-bs-backdrop="static">
+    <div class="modal-dialog" >
+    <div  class="modal-content" id="alert_text"[hidden]="dd" >
+    A simple success alert—check it out!<br><br>
+    <div  ><button type="button"id="alert_button"data-bs-dismiss="modal" aria-label="Close" (click)="alertfun()">ok</button>
+    </div> 
+</div>
+<div class="modal-content"  style="top:250px"[hidden]="mm">
+<mat-progress-bar color="accent" mode="indeterminate"></mat-progress-bar>
+</div>
+</div>
+</div>
+
 <form [formGroup]="userLogin" (ngSubmit)="submitUser()">
     <div id="title">
                     <h5 class="modal-title" id="exampleModalLabel">Enter the details</h5>
@@ -8,7 +22,7 @@
                     <div class="mb-3">
                         <label  class="form-label">devType</label>
                        &nbsp; <span *ngIf="devTypefunction &&devTypefunction.invalid">required</span>
-                        <input  formControlName="devType" type="email" class="form-control"
+                        <input  formControlName="DevType" type="email" class="form-control"
                              placeholder="Laptop….">
                             
                     </div>
@@ -21,37 +35,37 @@
                     <div class="mb-3">
                         <label  class="form-label">serial</label>
                         &nbsp; <span *ngIf="serialfunction && serialfunction.invalid">required</span>
-                        <input formControlName="serial" type="email" class="form-control"
+                        <input formControlName="Serial" type="email" class="form-control"
                              placeholder="Laptop….">
                     </div>
                     <div class="mb-3">
                         <label  class="form-label">owner</label>
                         &nbsp; <span *ngIf="ownerfunction &&ownerfunction.invalid">required</span>
-                        <input formControlName="owner" type="email" class="form-control"
+                        <input formControlName="Owner" type="email" class="form-control"
                              placeholder="Laptop….">
                     </div>
                     <div class="mb-3">
                         <label  class="form-label">make</label>
                         &nbsp; <span *ngIf="makefunction && makefunction.invalid">required</span>
-                        <input formControlName="make" type="email" class="form-control"
+                        <input formControlName="Make" type="email" class="form-control"
                              placeholder="Laptop….">
                     </div>
                     <div class="mb-3">
                         <label  class="form-label">model</label>
                         &nbsp; <span *ngIf="modelfunction && modelfunction.invalid">required</span>
-                        <input formControlName="model" type="email" class="form-control"
+                        <input formControlName="Model" type="email" class="form-control"
                              placeholder="Laptop….">
                     </div>
                     <div class="mb-3">
                         <label  class="form-label">location</label>
                         &nbsp; <span *ngIf="locationfunction && locationfunction.invalid">required</span>
-                        <input formControlName="location" type="email" class="form-control"
+                        <input formControlName="Location" type="email" class="form-control"
                              placeholder="Laptop….">
                     </div>
                     <div class="mb-3">
                         <label  class="form-label">purchase_date</label>
                         &nbsp; <span *ngIf="purchase_datefunction && purchase_datefunction.invalid">required</span>
-                        <input formControlName="purchase_date" type="email" class="form-control"
+                        <input formControlName="PurchaseDate" type="email" class="form-control"
                              placeholder="Laptop….">
                     </div>
         </div>
@@ -59,25 +73,31 @@
                     <div class="mb-3">
                         <label  class="form-label">warrantyExpDate</label>
                         &nbsp; <span *ngIf="warrantyExpDatefunction && warrantyExpDatefunction.invalid">required</span>
-                        <input formControlName="warrantyExpDate" type="email" class="form-control"
+                        <input formControlName="WarrantyExpDate" type="email" class="form-control"
+                             placeholder="Laptop….">
+                    </div>
+                    <div class="mb-3">
+                        <label  class="form-label">ServiceExpDate</label>
+                        &nbsp; <span *ngIf="serviceExpDatefunction && serviceExpDatefunction.invalid">required</span>
+                        <input formControlName="ServiceExpDate" type="email" class="form-control"
                              placeholder="Laptop….">
                     </div>
                     <div class="mb-3">
                         <label  class="form-label">size</label>
                         &nbsp; <span *ngIf="sizefunction && sizefunction.invalid">required</span>
-                        <input formControlName="size" type="email" class="form-control"
+                        <input formControlName="Size" type="email" class="form-control"
                              placeholder="Laptop….">
                     </div>
                     <div class="mb-3">
                         <label  class="form-label">toner</label>
                         &nbsp; <span *ngIf="tonerfunction && tonerfunction.invalid">required</span>
-                        <input formControlName="toner" type="email" class="form-control"
+                        <input formControlName="Toner" type="email" class="form-control"
                              placeholder="Laptop….">
                     </div>
                     <div class="mb-3">
                         <label  class="form-label">value</label>
                         &nbsp; <span *ngIf="valuefunction && valuefunction.invalid">required</span>
-                        <input formControlName="value" type="email" class="form-control"
+                        <input formControlName="Value" type="email" class="form-control"
                              placeholder="Laptop….">
                     </div>
                     <div class="mb-3">
@@ -98,11 +118,11 @@
                         <input formControlName="CellNumber" type="email" class="form-control"
                              placeholder="Laptop….">
                     </div>
-               
+                    
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
                     <button type="button" [disabled]="userLogin.invalid" class="btn btn-primary" data-bs-dismiss="modal" type="submit"
-                        value="Submit">Save changes</button>
+                        value="Submit" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Save changes</button>
                 </div>
             </div>
 </form>
