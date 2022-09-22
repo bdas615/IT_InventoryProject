@@ -34,9 +34,17 @@ export class ProductComponent implements OnInit, AfterViewInit{
    i!:number
    dd=true;
    mm=false;
+ 
    deleteUser(id:any){
+    // id=JSON.stringify(id)
+    let x={
+
+      "token":`A12F7A58-842D-4111-A44D-5F8C4E1AA521`,
+      "DevId":id
+}
+console.log(x)
     setTimeout(()=>{
-      this.htt.delete(`${"http://localhost:3000/product"}/${id}`).subscribe(res=>{ 
+      this.htt.post<any>("https://tools.brandinstitute.com/wsInventory/wsInventory.asmx/Device_Del",x).subscribe(res=>{ 
       console.log(res)
       this.dd=false;
     this.mm=true;
