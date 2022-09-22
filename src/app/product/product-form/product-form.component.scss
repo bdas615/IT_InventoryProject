@@ -1,34 +1,44 @@
-.outerDiv{
+.outerDiv {
     width: 48%;
     float: left;
     padding: 15px;
-    box-shadow:5px 5px 10px 0px rgb(211, 243, 226);
+    box-shadow: 5px 5px 10px 0px rgb(211, 243, 226);
     margin-bottom: 6px;
     height: 750px
-   
 }
-#outerDiv1{
+
+#outerDiv1 {
     background-color: rgb(150, 235, 186);
 }
-#outerDiv2{
+
+#outerDiv2 {
     background-color: rgb(232, 253, 237);
 }
 
-#exampleModalLabel{
-    width: 96%;float: left;
-    
+#exampleModalLabel {
+    width: 80%;
+    float: left;
+    color: rgb(236, 131, 131);
 }
-#title{ 
+#but{
+    float: right;
+    background-color: red;
+    padding:.4%;
+    margin-top: 6px;
+}
+#title {
     width: 96%;
-    background-color:rgb(184, 244, 111);
+    border: solid rgb(64, 158, 36) 2px;
     // box-shadow:0px 2px 15px 0px rgb(44, 6, 234);
-    box-shadow:0px 5px 5px 0px rgb(227, 232, 79);
-    
+    box-shadow: 0px 10px 15px 0px rgb(4, 245, 57);
+
 }
-span{
+
+span {
     color: red;
 }
-.modal-footer>button{
+
+.modal-footer>button {
     margin-left: 2%;
     font-size: xx-small;
     padding: none;
@@ -58,4 +68,39 @@ span{
     color: red;
     border-color: red;
    
+}
+
+@media screen and(max-width:500px) {
+    .outerDiv {
+        width: none;
+        float: left;
+        padding: 3%;
+        box-shadow: none;
+        margin-bottom: 0%;
+        height: 0%;
+        
+        
+    }
+    #exampleModalLabel {
+        width: 70%;
+        float: left;
+        margin-top: 1%;
+        
+        
+    }
+    #title {
+        margin-top: 30px;
+    }
+    #outerDiv1 {
+        background-color: rgb(232, 253, 237);
+    
+        width: 96%;
+        
+    }
+    
+    #outerDiv2 {
+        background-color: rgb(232, 253, 237);
+        clear: both;
+        width: 96%;
+    }
 }

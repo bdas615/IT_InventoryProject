@@ -15,9 +15,10 @@
 <form [formGroup]="userLogin" (ngSubmit)="submitUser()">
     <div id="title">
                     <h5 class="modal-title" id="exampleModalLabel">Enter the details</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    <button type="button"id="but" class="btn-close"  routerLink="/" aria-label="Close"></button>
                
                  </div>
+                 
                  <div class="outerDiv" id="outerDiv1">
                     <div class="mb-3">
                         <label  class="form-label">devType</label>
@@ -120,7 +121,7 @@
                     </div>
                     
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-secondary"   routerLink="/">Close</button>
                     <button type="button" [disabled]="userLogin.invalid" class="btn btn-primary" data-bs-dismiss="modal" type="submit"
                         value="Submit" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Save changes</button>
                 </div>

@@ -15,9 +15,9 @@
    
 <form [formGroup]="editDataValues"   (ngSubmit)="updateData(1)">
      
-    <div id="title">
+    <div id="title" >
                        <h5 class="modal-title" id="exampleModalLabel">&nbsp;Edit the details</h5>
-                       <button type="button" class="btn-close"  data-bs-dismiss="modal" ></button>
+                       <button type="button"  id="but" class="btn-close" routerLink="/"  ></button>
                    
     </div>          
              
@@ -123,8 +123,8 @@
                  placeholder="Laptop….">
         </div>
                       
-                   <div class="modal-footer" >
-                       <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                   <div class="modal-footer">
+                       <button type="button" class="btn btn-secondary" routerLink="/" >Close</button>
                        <button type="button"[disabled]="editDataValues.invalid" class="btn btn-primary" data-bs-dismiss="modal" type="submit"
                            value="Submit" aria-label="Close"data-bs-toggle="modal" data-bs-target="#staticBackdrop">Save changes</button>
                    </div>
