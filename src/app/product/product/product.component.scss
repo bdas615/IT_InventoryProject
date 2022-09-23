@@ -20,6 +20,7 @@ table {
     position:fixed ;
     z-index: 100;
 }
+
 th{
     background-color: rgb(184, 244, 111);
     text-align: center;
@@ -86,11 +87,12 @@ box-shadow:1px 2px 15px 1px rgb(225, 240, 171);
             background-color: rgb(250, 240, 240);
           }
         #mod{
-            top: 50%;
-            left: 50%;
-            transform: translate(-45%,-45%);
-            text-align: center;
-            position: fixed;
+          top: 50%;
+    left: 50%;
+    transform: translate(-45%,-45%);
+    text-align: center;
+    position:fixed ;
+    z-index: 100;
         }
         th{
             background-color: rgb(184, 244, 111);
@@ -151,7 +153,9 @@ box-shadow:1px 2px 15px 1px rgb(225, 240, 171);
     }
     button:hover
     {
-      font-size: large;
+      font-size: medium;
+     height: 30px;
+   
     }
     img{
       width: 25%;
@@ -162,8 +166,7 @@ box-shadow:1px 2px 15px 1px rgb(225, 240, 171);
   background-color: rgb(20, 171, 111);
   padding: 10px;
   width: fit-content;
-  left: 40%;
-  top: 20%;
+  
   position: fixed;
   color: beige;
   box-shadow: 2px 2px 5px 1px rgb(183, 225, 66);
