@@ -5,12 +5,13 @@ import {AfterViewInit, ViewChild} from '@angular/core';
 import {MatPaginator} from '@angular/material/paginator';
 import {MatSort} from '@angular/material/sort';
 import { ServiceService } from '../service.service';
-import { delay, from, map, timeInterval } from 'rxjs';
+import { catchError, delay, from, map, timeInterval } from 'rxjs';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
 import { FormBuilder} from '@angular/forms';
 import { HttpClient } from '@angular/common/http';
 import { ActivatedRoute, Router } from '@angular/router';
 import { tap } from 'rxjs';
+import { Expansion } from '@angular/compiler';
 
 export interface UserData {
   DevId:string
@@ -34,9 +35,24 @@ export class ProductComponent implements OnInit, AfterViewInit{
    i!:number
    dd=true;
    mm=false;
+   ff:any;
+   rr!:boolean;
+   ss!:boolean;
+   spin=true;
+   y!:any;
+   del(a:any){
+    this.rr=true;
+    this.ss=false;
+    this.ff=a;
+    console.log(this.ff)
+   }
  
    deleteUser(id:any){
     // id=JSON.stringify(id)
+    // console.log("delete")
+    this.rr=!this.rr;
+    this.ss=!this.ss;
+    this.rr=!this.rr
     let x={
 
       "token":`A12F7A58-842D-4111-A44D-5F8C4E1AA521`,
@@ -44,7 +60,10 @@ export class ProductComponent implements OnInit, AfterViewInit{
 }
 console.log(x)
     setTimeout(()=>{
-      this.htt.post<any>("https://tools.brandinstitute.com/wsInventory/wsInventory.asmx/Device_Del",x).subscribe(res=>{ 
+      this.htt.post<any>("https://tools.brandinstitute.com/wsInventory/wsInventory.asmx/Device_Del",x).pipe(catchError((err:any)=>{
+        this.rout.navigate(['/error']);
+        return err
+      })).subscribe(res=>{ 
       console.log(res)
       this.dd=false;
     this.mm=true;
@@ -73,13 +92,15 @@ console.log(x)
  
  
   ngOnInit(): void {
+    this.spin=false;
+  setTimeout(() => {
+    this.condition= this.activ.snapshot.data['data']
+    this.condition=JSON.parse(this.condition)
+    console.log(this.condition)
+    this.spin=true;
+    this.dataSource.data=this.condition;
+  },2000);
   
-   this.condition= this.activ.snapshot.data['data']
-   this.condition=JSON.parse(this.condition)
-   console.log(this.condition)
-   this.dataSource.data=this.condition;
-
-   
  
   }
 

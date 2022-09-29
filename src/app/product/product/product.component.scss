@@ -97,11 +97,10 @@ box-shadow:1px 2px 15px 1px rgb(225, 240, 171);
         th{
             background-color: rgb(184, 244, 111);
             text-align: center;
-            border-color: rgb(149, 7, 7);
-            
+            border-color: rgb(149, 7, 7);  
         }
         td{
-           
+            text-align: center;
             border-bottom: 1px;
             border-color: rgb(255, 255, 255);
         }
@@ -161,7 +160,15 @@ box-shadow:1px 2px 15px 1px rgb(225, 240, 171);
       width: 25%;
       height: 25%;
     }
-   
+    #alert_text1{
+      background-color: rgb(177, 56, 13);
+      padding: 10px;
+      width: 300px;
+      margin: 2px;
+      position: fixed;
+      color: beige;
+      box-shadow: 2px 2px 5px 1px rgb(19, 211, 122);
+    } 
 #alert_text {
   background-color: rgb(20, 171, 111);
   padding: 10px;
@@ -185,4 +192,9 @@ box-shadow:1px 2px 15px 1px rgb(225, 240, 171);
   border-color: red;
  
 }
-   
+ 
+.spinner-border{
+  top: 50%;
+  left: 50%;
+  position:fixed ;
+}

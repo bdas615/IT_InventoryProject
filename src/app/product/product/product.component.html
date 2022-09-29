@@ -3,7 +3,29 @@
         <mat-label>Search</mat-label>
         <input matInput (keyup)="applyFilter($event)" placeholder="Ex. Laptop…" #input>
     </mat-form-field>
+<!-- Modal -->
+<!-- Button trigger modal -->
 
+
+<!-- Modal -->
+<div class="modal fade" id="staticBackdrop"[hidden]="ss" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog" >
+    <div class="modal-content" id="alert_text1" >
+      <div class="modal-header">
+        <h4 style="color:aqua;">Alert</h4>
+        <button type="button" class="btn-close" style="background-color: aquamarine;" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        if you want to delete this data then you please  Confirm.<br>
+        once if you are click on confirm it will parmanently delete.
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" >Close</button>
+        <button type="button" class="btn btn-primary" (click)="deleteUser(ff)"data-bs-toggle="modal" data-bs-target="#staticBackdr">Understood</button>
+      </div>
+    </div>
+  </div>
+</div>
     
     <!-- material table for getting all data -->
     <div class="mat-elevation-z8" style="width:fit-content;">
@@ -41,11 +63,14 @@
                             Edit
                         </button>
                         <!-- Delete column for Delete any particular data -->
-                        <button type="button" (click)="deleteUser(row.DevId)" class="btn btn-danger"data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                        <button type="button" (click)="del(row.DevId)"  class="btn btn-danger"data-bs-toggle="modal" data-bs-target="#staticBackdrop">
                             Delete
                         </button>
+                       
+
                     </div>
                 </td>
+                
             </ng-container>
 
 
@@ -79,7 +104,7 @@
    
    
 <!-- alert -->
-<div    class="alert alert-danger " role="alert" class="modal fade" id="staticBackdrop" data-bs-backdrop="static">
+<div    class="alert alert-danger "role="alert" class="modal fade" id="staticBackdr" data-bs-backdrop="static">
     <div class="modal-dialog" >
     <div  class="modal-content" id="alert_text"[hidden]="dd" >
     A simple success alert—check it out!<br><br>
@@ -91,4 +116,8 @@
 </div>
 </div>
 </div>
-  
+
+<!-- spiner -->
+<div [hidden]="spin" class="spinner-border text-primary" role="status">
+  <span class="visually-hidden">Loading...</span>
+</div>

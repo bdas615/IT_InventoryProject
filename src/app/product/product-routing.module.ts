@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { ErrorPageComponent } from './error-page/error-page.component';
 import { ProductEditComponent } from './product-edit/product-edit.component';
 import { ProductFormComponent } from './product-form/product-form.component';
 import { ProductComponent } from './product/product.component';
@@ -7,6 +8,7 @@ import { ProductComponent } from './product/product.component';
 import { ResolverService } from './resolver.service';
 
 const routes: Routes = [
+  {path:'error',component:ErrorPageComponent},
   {path:'productForm',component:ProductFormComponent},
   {path:'editFrom/:dat',component:ProductEditComponent,resolve:{datav:ResolverService}},
   {path:'**',component:ProductComponent,resolve:{data:ResolverService}},

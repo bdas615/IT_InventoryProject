@@ -2,6 +2,7 @@ import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormControl, FormGroup, Validators } from '@angular/forms';
 import { ActivatedRoute, Router } from '@angular/router';
+import { catchError } from 'rxjs';
 
 
 @Component({
@@ -66,8 +67,10 @@ export class ProductEditComponent implements OnInit {
       //  console.log(this.editDataValues.value);
        let m=this.editDataValues.value;
       setTimeout(()=>{
-       return this.htt.post<any>("https://tools.brandinstitute.com/wsInventory/wsInventory.asmx/Device_Upd",m)
-       .subscribe(res=>{ 
+       return this.htt.post<any>("https://tools.brandinstitute.com/wsInventory/wsInventory.asmx/Device_Upd",m).pipe(catchError((err:any)=>{
+        this.rout.navigate(['/error']);
+        return err
+      })).subscribe(res=>{ 
           this.dd=false;
           this.mm=true; 
           console.log(res)

@@ -1,5 +1,6 @@
 import { Injectable } from '@angular/core';
-import { Resolve } from '@angular/router';
+import { Resolve, Router } from '@angular/router';
+import { catchError } from 'rxjs';
 import { ServiceService } from './service.service';
 
 @Injectable({
@@ -7,10 +8,13 @@ import { ServiceService } from './service.service';
 })
 export class ResolverService implements Resolve<any>{
 
-  constructor(private ser:ServiceService) { }
+  constructor(private ser:ServiceService,private rout:Router) { }
   resolve()
   {
-     return this.ser.serFun();
+     return this.ser.serFun().pipe(catchError((err:any)=>{
+      this.rout.navigate(['/error']);
+      return err
+    }))
    
   }
 }

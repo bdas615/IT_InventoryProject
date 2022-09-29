@@ -95,36 +95,36 @@
         <div class="mb-3">
             <label  class="form-label">toner</label>
             &nbsp; <span *ngIf="tonerfun && tonerfun.invalid">required</span>
-            <input formControlName="Toner" type="email" class="form-control"
+            <input formControlName="Toner" type="number" class="form-control"
                  placeholder="Laptop….">
         </div>
         <div class="mb-3">
             <label  class="form-label">value</label>
             &nbsp; <span *ngIf="valuefun && valuefun.invalid">required</span>
-            <input formControlName="Value" type="email" class="form-control"
+            <input formControlName="Value" type="number" class="form-control"
                  placeholder="Laptop….">
         </div>
         <div class="mb-3">
             <label  class="form-label">MacAddress</label>
             &nbsp; <span *ngIf="MacAddressfun && MacAddressfun.invalid">required</span>
-            <input formControlName="MacAddress" type="email" class="form-control"
+            <input formControlName="MacAddress" type="number" class="form-control"
                  placeholder="Laptop….">
         </div>
         <div class="mb-3">
             <label  class="form-label">IPAddress</label>
             &nbsp; <span *ngIf="IPAddressfun && IPAddressfun.invalid">required</span>
-            <input formControlName="IPAddress" type="email" class="form-control"
+            <input formControlName="IPAddress" type="number" class="form-control"
                  placeholder="Laptop….">
         </div>
         <div class="mb-3">
             <label  class="form-label">CellNumber</label>
             &nbsp; <span *ngIf="CellNumberfun &&CellNumberfun.invalid">required</span>
-            <input formControlName="CellNumber" type="email" class="form-control"
+            <input formControlName="CellNumber" type="number" class="form-control"
                  placeholder="Laptop….">
         </div>
                       
                    <div class="modal-footer">
-                       <button type="button" class="btn btn-secondary" routerLink="/" >Close</button>
+                       <button type="button" class="btn btn-secondary" routerLink="/">Close</button>
                        <button type="button"[disabled]="editDataValues.invalid" class="btn btn-primary" data-bs-dismiss="modal" type="submit"
                            value="Submit" aria-label="Close"data-bs-toggle="modal" data-bs-target="#staticBackdrop">Save changes</button>
                    </div>

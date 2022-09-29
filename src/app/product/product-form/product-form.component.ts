@@ -2,6 +2,7 @@ import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormControl, FormGroup, Validators } from '@angular/forms';
 import { ActivatedRoute, Router } from '@angular/router';
+import { catchError } from 'rxjs';
 import { ServiceService } from '../service.service';
 export interface UserData {
   id: number;
@@ -102,7 +103,10 @@ mm=false;
   submitUser(){
     console.log(this.userLogin.value)
     setTimeout(()=>{
-      this.htt.post<any>("https://tools.brandinstitute.com/wsInventory/wsInventory.asmx/Device_Add",this.userLogin.value).subscribe(res=>{ 
+      this.htt.post<any>("https://tools.brandinstitute.com/wsInventory/wsInventory.asmx/Device_Add",this.userLogin.value).pipe(catchError((err:any)=>{
+        this.rout.navigate(['/error']);
+        return err
+      })).subscribe(res=>{ 
       this.dd=false;
       this.mm=true;
       
