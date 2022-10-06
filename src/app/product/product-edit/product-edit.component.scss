@@ -6,7 +6,7 @@
     margin-bottom: 6px;
     height: 750px
 }
-alert_text
+
 #outerDiv1 {
     background-color: rgb(150, 235, 186);
 }
@@ -37,7 +37,9 @@ alert_text
 span {
     color: red;
 }
-
+h4{
+    background-color: rgb(8, 199, 78);margin: 0%;padding: 0%;border-radius: inherit;
+}
 .modal-footer>button {
     margin-left: 2%;
     font-size: xx-small;
@@ -46,21 +48,19 @@ span {
 }
 
 #alert_text {
-    background-color: rgb(20, 171, 111);
-    padding: 10px;
+   border-radius: 0%;
+    padding: 0px;
     width: fit-content;
-   
-    position: fixed;
-    color: beige;
+    color: rgb(27, 27, 10);
     box-shadow: 2px 2px 5px 1px rgb(183, 225, 66);
+    position: fixed;
 }
 
 #alert_button {
     width: fit-content;
-    background: none;
-    color: white;
-    border: 1px solid white;
-    float: right;
+    background: rgb(34, 225, 34);
+    color: rgb(16, 5, 5);
+    border: 1px solid rgb(19, 8, 8);
 }
 #alert_button:hover{
     background-color: aqua;
@@ -108,4 +108,6 @@ span {
     clear: both;
     width: 96%;
 }
+
+
 }

@@ -1,10 +1,16 @@
 <!-- alert -->
 <div    class="alert alert-danger " role="alert" class="modal fade" id="staticBackdrop" data-bs-backdrop="static">
-    <div class="modal-dialog" >
-    <div  class="modal-content" id="alert_text"[hidden]="dd" >
-    A simple success alert—check it out!<br><br>
-    <div  ><button type="button"id="alert_button"data-bs-dismiss="modal" aria-label="Close" (click)="alertfun()">ok</button>
+    <div class="modal-dialog">
+        
+    <div  class="modal-content"id="alert_text" [hidden]="dd"  >
+        <h4>Alert</h4>
+    A simple success alert—check it out!
+    
+    <div  class="modal-content" style="align-items: center;border:none " >
+      
+    <div id="button_id"  ><button type="button"id="alert_button"data-bs-dismiss="modal" aria-label="Close" (click)="alertfun()">ok</button>
     </div> 
+</div>
 </div>
 <div class="modal-content"  style="top:250px"[hidden]="mm">
 <mat-progress-bar color="accent" mode="indeterminate"></mat-progress-bar>
@@ -22,7 +28,8 @@
                  <div class="outerDiv" id="outerDiv1">
                     <div class="mb-3">
                         <label  class="form-label">devType</label>
-                       &nbsp; <span *ngIf="devTypefunction &&devTypefunction.invalid">required</span>
+                       &nbsp; <span *ngIf="devTypefunction&&devTypefunction.invalid">required</span>
+                       
                         <input  formControlName="DevType" type="text" class="form-control"
                              placeholder="Laptop….">
                             
@@ -36,7 +43,10 @@
                     <div class="mb-3">
                         <label  class="form-label">serial</label>
                         &nbsp; <span *ngIf="serialfunction && serialfunction.invalid">required</span>
-                        <input formControlName="Serial" type="number" class="form-control"
+                        <span *ngIf="serialfunction1" class="alert alert-primary" role="alert">
+                            only you can enter number
+                           </span>
+                        <input formControlName="Serial" type="text" class="form-control"
                              placeholder="Laptop….">
                     </div>
                     <div class="mb-3">
@@ -66,7 +76,7 @@
                     <div class="mb-3">
                         <label  class="form-label">purchase_date</label>
                         &nbsp; <span *ngIf="purchase_datefunction && purchase_datefunction.invalid">required</span>
-                        <input formControlName="PurchaseDate" type="date" class="form-control"
+                        <input formControlName="PurchaseDate"  type="datetime-local" class="form-control"
                              placeholder="Laptop….">
                     </div>
         </div>
@@ -74,49 +84,67 @@
                     <div class="mb-3">
                         <label  class="form-label">warrantyExpDate</label>
                         &nbsp; <span *ngIf="warrantyExpDatefunction && warrantyExpDatefunction.invalid">required</span>
-                        <input formControlName="WarrantyExpDate" type="date" class="form-control"
+                        <input formControlName="WarrantyExpDate" type="datetime-local" class="form-control"
                              placeholder="Laptop….">
                     </div>
                     <div class="mb-3">
                         <label  class="form-label">ServiceExpDate</label>
                         &nbsp; <span *ngIf="serviceExpDatefunction && serviceExpDatefunction.invalid">required</span>
-                        <input formControlName="ServiceExpDate" type="date" class="form-control"
+                        <input formControlName="ServiceExpDate" type="datetime-local" class="form-control"
                              placeholder="Laptop….">
                     </div>
                     <div class="mb-3">
                         <label  class="form-label">size</label>
                         &nbsp; <span *ngIf="sizefunction && sizefunction.invalid">required</span>
-                        <input formControlName="Size" type="number" class="form-control"
+                        <span *ngIf="sizefunction1" class="alert alert-primary" role="alert">
+                            only you can enter number
+                           </span>
+                        <input formControlName="Size" type="text" class="form-control"
                              placeholder="Laptop….">
                     </div>
                     <div class="mb-3">
                         <label  class="form-label">toner</label>
                         &nbsp; <span *ngIf="tonerfunction && tonerfunction.invalid">required</span>
-                        <input formControlName="Toner" type="number" class="form-control"
+                        <span *ngIf="tonerfunction1" class="alert alert-primary" role="alert">
+                            only you can enter number
+                           </span>
+                        <input formControlName="Toner" type="text" class="form-control"
                              placeholder="Laptop….">
                     </div>
                     <div class="mb-3">
                         <label  class="form-label">value</label>
                         &nbsp; <span *ngIf="valuefunction && valuefunction.invalid">required</span>
-                        <input formControlName="Value" type="number" class="form-control"
+                        <span *ngIf="valuefunction1" class="alert alert-primary" role="alert">
+                            only you can enter number
+                           </span>
+                        <input formControlName="Value" type="text" class="form-control"
                              placeholder="Laptop….">
                     </div>
                     <div class="mb-3">
                         <label  class="form-label">MacAddress</label>
                         &nbsp; <span *ngIf="MacAddressfunction && MacAddressfunction.invalid">required</span>
-                        <input formControlName="MacAddress" type="number" class="form-control"
+                        <span *ngIf="MacAddressfunction1" class="alert alert-primary" role="alert">
+                            only you can enter number
+                           </span>
+                        <input formControlName="MacAddress" type="text" class="form-control"
                              placeholder="Laptop….">
                     </div>
                     <div class="mb-3">
                         <label  class="form-label">IPAddress</label>
                         &nbsp; <span *ngIf="IPAddressfunction && IPAddressfunction.invalid">required</span>
-                        <input formControlName="IPAddress" type="number" class="form-control"
+                        <span *ngIf="IPAddressfunction1" class="alert alert-primary" role="alert">
+                            only you can enter number
+                           </span>
+                        <input formControlName="IPAddress" type="text" class="form-control"
                              placeholder="Laptop….">
                     </div>
                     <div class="mb-3">
                         <label  class="form-label">CellNumber</label>
                         &nbsp; <span *ngIf="CellNumberfunction &&CellNumberfunction.invalid">required</span>
-                        <input formControlName="CellNumber" type="number" class="form-control"
+                        <span *ngIf="CellNumberfunction1" class="alert alert-primary" role="alert">
+                            only you can enter number
+                           </span>
+                        <input formControlName="CellNumber" type="text" class="form-control"
                              placeholder="Laptop….">
                     </div>
                     

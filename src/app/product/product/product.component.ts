@@ -93,6 +93,7 @@ console.log(x)
  
   ngOnInit(): void {
     this.spin=false;
+    
   setTimeout(() => {
     this.condition= this.activ.snapshot.data['data']
     this.condition=JSON.parse(this.condition)
@@ -100,8 +101,6 @@ console.log(x)
     this.spin=true;
     this.dataSource.data=this.condition;
   },2000);
-  
- 
   }
 
   ngAfterViewInit() {

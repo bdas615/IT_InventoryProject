@@ -11,7 +11,7 @@
 <div class="modal fade" id="staticBackdrop"[hidden]="ss" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
   <div class="modal-dialog" >
     <div class="modal-content" id="alert_text1" >
-      <div class="modal-header">
+      <div class="modal-header"style="background-color:green">
         <h4 style="color:aqua;">Alert</h4>
         <button type="button" class="btn-close" style="background-color: aquamarine;" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
@@ -94,7 +94,7 @@
     
     <!-- Button trigger modal -->
     <div id="mod">
-        <h4>There is no any data.</h4>
+        <h3>There is no any data.</h3>
         <img src="https://demo.learncab.com/assets/images/no-data-found.png" alt="">
         <button type="button" class="btn btn-primary"routerLink="/productForm" >
             Add new data
@@ -107,9 +107,27 @@
 <div    class="alert alert-danger "role="alert" class="modal fade" id="staticBackdr" data-bs-backdrop="static">
     <div class="modal-dialog" >
     <div  class="modal-content" id="alert_text"[hidden]="dd" >
-    A simple success alert—check it out!<br><br>
-    <div  ><button type="button"id="alert_button"data-bs-dismiss="modal" aria-label="Close" (click)="alertfun()">ok</button>
+        <h4>Alert</h4>
+        A simple success alert—check it out!
+    
+        <div  class="modal-content" style="align-items: center;border:none " >
+          
+        <div id="button_id"  ><button type="button"id="alert_button"data-bs-dismiss="modal" aria-label="Close" (click)="alertfun()">ok</button>
+        </div> 
     </div> 
+</div>
+<div class="modal-content"  style="top:250px"[hidden]="mm">
+<mat-progress-bar color="accent" mode="indeterminate"></mat-progress-bar>
+</div>
+</div>
+</div>
+<!-- alert -->
+<div    class="alert alert-danger " role="alert" class="modal fade" id="staticBackdrop" data-bs-backdrop="static">
+    <div class="modal-dialog">
+        
+    <div  class="modal-content"id="alert_text" [hidden]="dd"  >
+        
+  
 </div>
 <div class="modal-content"  style="top:250px"[hidden]="mm">
 <mat-progress-bar color="accent" mode="indeterminate"></mat-progress-bar>

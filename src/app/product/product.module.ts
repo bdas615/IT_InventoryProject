@@ -14,12 +14,14 @@ import { ProductFormComponent } from './product-form/product-form.component';
 import { ProductEditComponent } from './product-edit/product-edit.component';
 import {MatProgressBarModule} from '@angular/material/progress-bar';
 import { ErrorPageComponent } from './error-page/error-page.component';
+import { PieChartComponent } from './chart/pie-chart/pie-chart.component';
 @NgModule({
   declarations: [
     ProductComponent,
     ProductFormComponent,
     ProductEditComponent,
-    ErrorPageComponent
+    ErrorPageComponent,
+    PieChartComponent
   ],
   imports: [
     MatProgressBarModule,

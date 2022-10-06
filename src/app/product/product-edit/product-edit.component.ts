@@ -3,8 +3,6 @@ import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormControl, FormGroup, Validators } from '@angular/forms';
 import { ActivatedRoute, Router } from '@angular/router';
 import { catchError } from 'rxjs';
-
-
 @Component({
   selector: 'app-product-edit',
   templateUrl: './product-edit.component.html',
@@ -58,14 +56,15 @@ export class ProductEditComponent implements OnInit {
         MacAddress:a.MacAddress,
         IPAddress:a.IPAddress,
         CellNumber:a.CellNumber
-    
         })
       }
       dd=true;
       mm=false;
-      updateData(id: any){
+      updateData(){
       //  console.log(this.editDataValues.value);
        let m=this.editDataValues.value;
+       console.log("123")
+       
       setTimeout(()=>{
        return this.htt.post<any>("https://tools.brandinstitute.com/wsInventory/wsInventory.asmx/Device_Upd",m).pipe(catchError((err:any)=>{
         this.rout.navigate(['/error']);
@@ -77,7 +76,6 @@ export class ProductEditComponent implements OnInit {
           // window.location.reload();
        })
       },1000)
-      
       }
       alertfun(){
         this.rout.navigate(['/']);
@@ -130,6 +128,262 @@ export class ProductEditComponent implements OnInit {
   get CellNumberfun(){
     return this.editDataValues.get("CellNumber")
   }
+  get devTypefunction1(){
+    let x= this.editDataValues.get("DevType")
+    x=x?.value
+    let num = Number(x);
+    console.log(num)
+    let m=JSON.stringify(num);
+     console.log(m);
+     if("null"==m)
+     {
+      return true;
+      console.log('my null')
+     }
+     else{
+      return false;
+     }
+ }
+ get DevTypeOtherfunction1(){
+   let x= this.editDataValues.get("DevTypeOther")
+   x=x?.value
+   let num = Number(x);
+   console.log(num)
+   let m=JSON.stringify(num);
+    console.log(m);
+    if("null"==m)
+    {
+     return true;
+     console.log('my null')
+    }
+    else{
+     return false;
+    }
+ }
+ get serialfunction1(){
+  let x=this.editDataValues.get("Serial")
+   x=x?.value
+   let num = Number(x);
+   console.log(num)
+   let m=JSON.stringify(num);
+    console.log(m);
+    if("null"==m)
+    {
+     return true;
+     console.log('my null')
+    }
+    else{
+     return false;
+    }
+ }
+ get ownerfunction1(){
+  let x=this.editDataValues.get("Owner")
+   x=x?.value
+   let num = Number(x);
+   console.log(num)
+   let m=JSON.stringify(num);
+    console.log(m);
+    if("null"==m)
+    {
+     return true;
+     console.log('my null')
+    }
+    else{
+     return false;
+    }
+ }
+ get makefunction1(){
+  let x=this.editDataValues.get("Make")
+   x=x?.value
+   let num = Number(x);
+   console.log(num)
+   let m=JSON.stringify(num);
+    console.log(m);
+    if("null"==m)
+    {
+     return true;
+     console.log('my null')
+    }
+    else{
+     return false;
+    }
+ }
+ get modelfunction1(){
+  let x=this.editDataValues.get("Model")
+   x=x?.value
+   let num = Number(x);
+   console.log(num)
+   let m=JSON.stringify(num);
+    console.log(m);
+    if("null"==m)
+    {
+     return true;
+     console.log('my null')
+    }
+    else{
+     return false;
+    }
+ }
+ get locationfunction1(){
+  let x=this.editDataValues.get("Location")
+   x=x?.value
+   let num = Number(x);
+   console.log(num)
+   let m=JSON.stringify(num);
+    console.log(m);
+    if("null"==m)
+    {
+     return true;
+     console.log('my null')
+    }
+    else{
+     return false;
+    }
+ }
+ get purchase_datefunction1(){
+  let x=this.editDataValues.get("PurchaseDate")
+   x=x?.value
+   let num = Number(x);
+   console.log(num)
+   let m=JSON.stringify(num);
+    console.log(m);
+    if("null"==m)
+    {
+     return true;
+     console.log('my null')
+    }
+    else{
+     return false;
+    }
+ }
+ get warrantyExpDatefunction1(){
+  let x=this.editDataValues.get("WarrantyExpDate")
+   x=x?.value
+   let num = Number(x);
+   console.log(num)
+   let m=JSON.stringify(num);
+    console.log(m);
+    if("null"==m)
+    {
+     return true;
+     console.log('my null')
+    }
+    else{
+     return false;
+    }
+ }
+ get serviceExpDatefunction1(){
+  let x= this.editDataValues.get("ServiceExpDate")
+   x=x?.value
+   let num = Number(x);
+   console.log(num)
+   let m=JSON.stringify(num);
+    console.log(m);
+    if("null"==m)
+    {
+     return true;
+     console.log('my null')
+    }
+    else{
+     return false;
+    }
+ }
+ get sizefunction1(){
+  let x= this.editDataValues.get("Size")
+   x=x?.value
+   let num = Number(x);
+   console.log(num)
+   let m=JSON.stringify(num);
+    console.log(m);
+    if("null"==m)
+    {
+     return true;
+     console.log('my null')
+    }
+    else{
+     return false;
+    }
+ }
+ get tonerfunction1(){
+  let x= this.editDataValues.get("Toner")
+   x=x?.value
+   let num = Number(x);
+   console.log(num)
+   let m=JSON.stringify(num);
+    console.log(m);
+    if("null"==m)
+    {
+     return true;
+     console.log('my null')
+    }
+    else{
+     return false;
+    }
+ }
+ get valuefunction1(){
+  let x= this.editDataValues.get("Value")
+   x=x?.value
+   let num = Number(x);
+   console.log(num)
+   let m=JSON.stringify(num);
+    console.log(m);
+    if("null"==m)
+    {
+     return true;
+     console.log('my null')
+    }
+    else{
+     return false;
+    }
+ }
+ get MacAddressfunction1(){
+  let x= this.editDataValues.get("MacAddress")
+   x=x?.value
+   let num = Number(x);
+   console.log(num)
+   let m=JSON.stringify(num);
+    console.log(m);
+    if("null"==m)
+    {
+     return true;
+     console.log('my null')
+    }
+    else{
+     return false;
+    }
+ }
+ get IPAddressfunction1(){
+  let x=this.editDataValues.get("IPAddress")
+   x=x?.value
+   let num = Number(x);
+   console.log(num)
+   let m=JSON.stringify(num);
+    console.log(m);
+    if("null"==m)
+    {
+     return true;
+     console.log('my null')
+    }
+    else{
+     return false;
+    }
+ }
+ get CellNumberfunction1(){
+   let x=this.editDataValues.get("CellNumber")
+   x=x?.value
+   let num = Number(x);
+   console.log(num)
+   let m=JSON.stringify(num);
+    console.log(m);
+    if("null"==m)
+    {
+     return true;
+     console.log('my null')
+    }
+    else{
+     return false;
+    }
+ }
   x:any;
   z:any;
   ngOnInit(): void {

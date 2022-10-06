@@ -51,7 +51,7 @@ export class ProductFormComponent implements OnInit {
      })
   
   get devTypefunction(){
-    return this.userLogin.get("DevType")
+     return this.userLogin.get("DevType")
   }
   get DevTypeOtherfunction(){
     return this.userLogin.get("DevTypeOther")
@@ -98,6 +98,262 @@ export class ProductFormComponent implements OnInit {
   get CellNumberfunction(){
     return this.userLogin.get("CellNumber")
   }
+  get devTypefunction1(){
+    let x= this.userLogin.get("DevType")
+    x=x?.value
+    let num = Number(x);
+    console.log(num)
+    let m=JSON.stringify(num);
+     console.log(m);
+     if("null"==m)
+     {
+      return true;
+      console.log('my null')
+     }
+     else{
+      return false;
+     }
+ }
+ get DevTypeOtherfunction1(){
+   let x= this.userLogin.get("DevTypeOther")
+   x=x?.value
+   let num = Number(x);
+   console.log(num)
+   let m=JSON.stringify(num);
+    console.log(m);
+    if("null"==m)
+    {
+     return true;
+     console.log('my null')
+    }
+    else{
+     return false;
+    }
+ }
+ get serialfunction1(){
+  let x=this.userLogin.get("Serial")
+   x=x?.value
+   let num = Number(x);
+   console.log(num)
+   let m=JSON.stringify(num);
+    console.log(m);
+    if("null"==m)
+    {
+     return true;
+     console.log('my null')
+    }
+    else{
+     return false;
+    }
+ }
+ get ownerfunction1(){
+  let x=this.userLogin.get("Owner")
+   x=x?.value
+   let num = Number(x);
+   console.log(num)
+   let m=JSON.stringify(num);
+    console.log(m);
+    if("null"==m)
+    {
+     return true;
+     console.log('my null')
+    }
+    else{
+     return false;
+    }
+ }
+ get makefunction1(){
+  let x=this.userLogin.get("Make")
+   x=x?.value
+   let num = Number(x);
+   console.log(num)
+   let m=JSON.stringify(num);
+    console.log(m);
+    if("null"==m)
+    {
+     return true;
+     console.log('my null')
+    }
+    else{
+     return false;
+    }
+ }
+ get modelfunction1(){
+  let x=this.userLogin.get("Model")
+   x=x?.value
+   let num = Number(x);
+   console.log(num)
+   let m=JSON.stringify(num);
+    console.log(m);
+    if("null"==m)
+    {
+     return true;
+     console.log('my null')
+    }
+    else{
+     return false;
+    }
+ }
+ get locationfunction1(){
+  let x=this.userLogin.get("Location")
+   x=x?.value
+   let num = Number(x);
+   console.log(num)
+   let m=JSON.stringify(num);
+    console.log(m);
+    if("null"==m)
+    {
+     return true;
+     console.log('my null')
+    }
+    else{
+     return false;
+    }
+ }
+ get purchase_datefunction1(){
+  let x=this.userLogin.get("PurchaseDate")
+   x=x?.value
+   let num = Number(x);
+   console.log(num)
+   let m=JSON.stringify(num);
+    console.log(m);
+    if("null"==m)
+    {
+     return true;
+     console.log('my null')
+    }
+    else{
+     return false;
+    }
+ }
+ get warrantyExpDatefunction1(){
+  let x=this.userLogin.get("WarrantyExpDate")
+   x=x?.value
+   let num = Number(x);
+   console.log(num)
+   let m=JSON.stringify(num);
+    console.log(m);
+    if("null"==m)
+    {
+     return true;
+     console.log('my null')
+    }
+    else{
+     return false;
+    }
+ }
+ get serviceExpDatefunction1(){
+  let x= this.userLogin.get("ServiceExpDate")
+   x=x?.value
+   let num = Number(x);
+   console.log(num)
+   let m=JSON.stringify(num);
+    console.log(m);
+    if("null"==m)
+    {
+     return true;
+     console.log('my null')
+    }
+    else{
+     return false;
+    }
+ }
+ get sizefunction1(){
+  let x= this.userLogin.get("Size")
+   x=x?.value
+   let num = Number(x);
+   console.log(num)
+   let m=JSON.stringify(num);
+    console.log(m);
+    if("null"==m)
+    {
+     return true;
+     console.log('my null')
+    }
+    else{
+     return false;
+    }
+ }
+ get tonerfunction1(){
+  let x= this.userLogin.get("Toner")
+   x=x?.value
+   let num = Number(x);
+   console.log(num)
+   let m=JSON.stringify(num);
+    console.log(m);
+    if("null"==m)
+    {
+     return true;
+     console.log('my null')
+    }
+    else{
+     return false;
+    }
+ }
+ get valuefunction1(){
+  let x= this.userLogin.get("Value")
+   x=x?.value
+   let num = Number(x);
+   console.log(num)
+   let m=JSON.stringify(num);
+    console.log(m);
+    if("null"==m)
+    {
+     return true;
+     console.log('my null')
+    }
+    else{
+     return false;
+    }
+ }
+ get MacAddressfunction1(){
+  let x= this.userLogin.get("MacAddress")
+   x=x?.value
+   let num = Number(x);
+   console.log(num)
+   let m=JSON.stringify(num);
+    console.log(m);
+    if("null"==m)
+    {
+     return true;
+     console.log('my null')
+    }
+    else{
+     return false;
+    }
+ }
+ get IPAddressfunction1(){
+  let x=this.userLogin.get("IPAddress")
+   x=x?.value
+   let num = Number(x);
+   console.log(num)
+   let m=JSON.stringify(num);
+    console.log(m);
+    if("null"==m)
+    {
+     return true;
+     console.log('my null')
+    }
+    else{
+     return false;
+    }
+ }
+ get CellNumberfunction1(){
+   let x=this.userLogin.get("CellNumber")
+   x=x?.value
+   let num = Number(x);
+   console.log(num)
+   let m=JSON.stringify(num);
+    console.log(m);
+    if("null"==m)
+    {
+     return true;
+     console.log('my null')
+    }
+    else{
+     return false;
+    }
+ }
 dd=true;
 mm=false;
   submitUser(){

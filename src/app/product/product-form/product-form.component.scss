@@ -6,7 +6,9 @@
     margin-bottom: 6px;
     height: 750px
 }
-
+.alert{
+   padding: 0%;
+}
 #outerDiv1 {
     background-color: rgb(150, 235, 186);
 }
@@ -37,21 +39,26 @@
 span {
     color: red;
 }
-
+h4{
+    background-color: rgb(8, 199, 78);margin: 0%;padding: 0%;border-radius: inherit;
+}
 .modal-footer>button {
     margin-left: 2%;
     font-size: xx-small;
     padding: none;
     width: fit-contents;
 }
-
+#button_id{
+   background-color: rgb(7, 189, 95);
+}
 #alert_text {
-    background-color: rgb(20, 171, 111);
-    padding: 10px;
-    width: fit-content;
+    border-radius: 0px;
     position: fixed;
-    color: beige;
+    padding: 0px;
+    width: fit-content;
+    color: rgb(27, 27, 10);
     box-shadow: 2px 2px 5px 1px rgb(183, 225, 66);
+    
 }
 
 #alert_button {
@@ -59,13 +66,11 @@ span {
     background: none;
     color: white;
     border: 1px solid white;
-    float: right;
 }
 #alert_button:hover{
     background-color: aqua;
     color: red;
-    border-color: red;
-   
+    border-color: red; 
 }
 
 @media screen and(max-width:500px) {
@@ -82,23 +87,29 @@ span {
     #exampleModalLabel {
         width: 70%;
         float: left;
-        margin-top: 1%;
+        margin-top: 1%;;
         
         
     }
     #title {
         margin-top: 30px;
-    }
-    #outerDiv1 {
-        background-color: rgb(232, 253, 237);
+       
     
-        width: 96%;
+    }
         
-    }
+       
     
-    #outerDiv2 {
-        background-color: rgb(232, 253, 237);
-        clear: both;
-        width: 96%;
-    }
+ 
+#outerDiv1 {
+    background-color: rgb(232, 253, 237);
+
+    width: 96%;
+    
+}
+
+#outerDiv2 {
+    background-color: rgb(232, 253, 237);
+    clear: both;
+    width: 96%;
+}
 }
