@@ -1,0 +1,164 @@
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <h1 id="header">
+        <p class="headerText">DEVICE DETAILED INFO</p>
+    </h1>
+
+<ng-container *ngIf="this.a!=null">
+<div class="main-table">
+    <div id="table1">
+        <table>
+            <tr>
+                <td class="left-column">DevId</td>
+                <td class="right-column">{{data.DevId}}</td>
+            </tr>
+
+            <tr>
+                <td class="left-column">DevType</td>
+                <td class="right-column">{{data.DevType}}</td>
+            </tr>
+            <tr>
+                <td class="left-column">DevTypeOther</td>
+                <td class="right-column">{{data.DevTypeOther}}</td>
+            </tr>
+            <tr>
+                <td class="left-column">Make</td>
+                <td class="right-column">{{data.Make}}</td>
+            </tr>
+            <tr>
+                <td class="left-column">Model</td>
+                <td class="right-column">{{data.Model}}</td>
+            </tr>
+            <tr>
+                <td class="left-column">Owner</td>
+                <td class="right-column">{{data.Owner}}</td>
+            </tr>
+            <tr>
+                <td class="left-column">Location</td>
+                <td class="right-column">{{data.Location}}</td>
+            </tr>
+            <tr>
+                <td class="left-column">Serial</td>
+                <td class="right-column">{{data.Serial}}</td>
+            </tr>
+            <tr>
+                <td class="left-column">PurchaseDate</td>
+                <td class="date right-column">{{data.PurchaseDate}}</td>
+            </tr>
+
+            <tr>
+                <td class="left-column">WarrantyExpDate</td>
+                <td class="date right-column">{{data.WarrantyExpDate}}</td>
+            </tr>
+            <tr>
+                <td class="left-column">ServiceExpDate</td>
+                <td class="date right-column">{{data.ServiceExpDate}}</td>
+            </tr>
+            <tr>
+                <td class="left-column">Value</td>
+                <td class="right-column">{{data.Value}}</td>
+            </tr>
+            <tr>
+                <td class="left-column">Size</td>
+                <td class="right-column">{{data.Size}}</td>
+            </tr>
+            <tr>
+                <td class="left-column">Toner</td>
+                <td class="right-column">{{data.Toner}}</td>
+            </tr>
+            <tr>
+                <td class="left-column">MacAddress</td>
+                <td class="right-column">{{data.MacAddress}}</td>
+            </tr>
+            <tr>
+                <td class="left-column">IPAddress</td>
+                <td class="right-column">{{data.IPAddress}}</td>
+            </tr>
+            <tr>
+                <td class="left-column">CellNumber</td>
+                <td class="right-column">{{data.CellNumber}}</td>
+            </tr>
+            <tr>
+                <td class="left-column">UpdDate</td>
+                <td class="date right-column">{{data.UpdDate}}</td>
+            </tr>
+
+            <tr class="buttonID">
+                <td clas="td">
+
+                    <button mat-raised-button color="primary" id="update" 
+                    routerLink="/editFrom/{{data.DevId}}"  
+                    class="my-class1">Update</button>
+                    
+                    &nbsp;
+                    <button mat-raised-button color="accent" id="print" 
+                        data-bs-toggle="modal" 
+                        data-bs-target="#staticBackdrop2"  
+                        class="my-class2">Print</button>
+                    
+                    &nbsp;
+                    <button mat-raised-button color="warn" id="delete"
+                    data-bs-toggle="modal" 
+                    data-bs-target="#staticBackdrop"  
+                    class="my-class3">Delete</button>
+
+                </td>
+                <td class="buttonID"></td>
+            </tr>
+        </table>
+    </div>
+</div>
+</ng-container>
+
+<div *ngIf="this.a==null">
+   
+    <div class="d-flex justify-content-center">
+        <div class="spinner-border" role="status">
+          <span class="visually-hidden">Loading...</span>
+        </div>
+      </div>
+
+       <!-- <span>
+        <img src="https://cdn.psdrepo.com/images/2x/500-internal-server-error-freebies-b8.jpg" alt="internal server error">
+    </span> -->
+    
+      <!-- <mat-progress-bar mode="indeterminate"></mat-progress-bar> -->
+</div>
+
+
+  <!--  Delete Box  Modal -->
+   <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content"  >
+        <div class="modal-header" style="background-color:#1e7c37;">
+          <h5 class="modal-title" id="staticBackdropLabel" style="color:#ffffff;font-size: large;margin: inherit;">Deletion Confirmation Box</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body" style="font-size:medium;color:rgb(0, 0, 0);font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif, 'Arial Narrow', Arial, sans-serif, Courier, monospace">
+         Please confirm that data needs to be permanently deleted!! <br> <strong style="color:rgb(232, 99, 99); font-weight:700;">Warning - Data once deleted, cannot be restored again</strong>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-info" data-bs-dismiss="modal">No, I Changed My Mind</button>
+          <button type="button" class="btn btn-danger" (click)="deleteUser(data.DevId)">Rest In Peace</button>
+        </div>
+      </div>
+    </div>
+  </div>  
+
+    <!-- Print Box Modal -->
+    <div class="modal fade" id="staticBackdrop2" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content"  >
+            <div class="modal-header" style="background-color:#1e7c37;">
+              <h5 class="modal-title" id="staticBackdropLabel" style="color:#ffffff;font-size: large;margin: inherit;">Printing Confirmation Box</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body" style="font-size:medium;color:rgb(0, 0, 0);font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif, 'Arial Narrow', Arial, sans-serif, Courier, monospace">
+             Please confirm you want to print the page!! <br> <strong style="color:darkblue; font-weight:900;">Note - Printed Page will be downloaded in Excel. Please check your Downloads Folder after download completes!!</strong>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-warning" data-bs-dismiss="modal">No Print Required</button>
+              <button type="button" class="btn btn-primary" (click)="exportToExcel()">Yes Go Ahead</button>
+            </div>
+          </div>
+        </div>
+      </div>  

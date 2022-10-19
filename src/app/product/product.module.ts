@@ -16,6 +16,9 @@ import {MatProgressBarModule} from '@angular/material/progress-bar';
 import { ErrorPageComponent } from './error-page/error-page.component';
 import { PieChartComponent } from './chart/pie-chart/pie-chart.component';
 import { BarChartComponent } from './chart/bar-chart/bar-chart.component';
+import { ProductDetailsComponent } from './product-details/product-details.component';
+import { MatButtonModule } from '@angular/material/button';
+
 @NgModule({
   declarations: [
     ProductComponent,
@@ -23,7 +26,8 @@ import { BarChartComponent } from './chart/bar-chart/bar-chart.component';
     ProductEditComponent,
     ErrorPageComponent,
     PieChartComponent,
-    BarChartComponent
+    BarChartComponent,
+    ProductDetailsComponent
   ],
   imports: [
     MatProgressBarModule,
@@ -34,7 +38,8 @@ import { BarChartComponent } from './chart/bar-chart/bar-chart.component';
     MatSortModule,
     MatPaginatorModule,
     HttpClientModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    MatButtonModule
   ],
   providers:[ResolverService],
   exports:[

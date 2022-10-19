@@ -1,0 +1,323 @@
+tr {
+    width: 100%;
+
+}
+
+tr:nth-child(even) {
+    background-color: rgb(245, 245, 245);
+}
+
+#update {
+  width: 22%;
+  text-align: center;
+}
+
+#delete {
+    text-align: center;
+    width: 20%;
+}
+
+#print {
+    text-align: center;
+    width: 20%;
+}
+
+table {
+    margin-top: 0.5%;
+    border-collapse: collapse;
+    margin-bottom: 0px;
+    margin-left: 3%;
+    width: 90%;
+    text-align: left;
+    // font-family: arial, sans-serif;
+    box-shadow: 5px 8px 38px rgb(14, 67, 240);
+}
+
+#header {
+    font-size: x-large;
+    align-self: center;
+    text-align: center;
+    margin-bottom: 0px;
+    margin-top: 1%;
+    margin-left: 3%;
+    background-color: #003082;
+    box-shadow: 5px 10px 28px rgba(42, 88, 241, 0.751);
+    width: 90%;
+    color: rgb(255, 255, 255);
+    height: 80px;
+}
+
+#header>p {
+    text-align: left;
+    padding-top: 1.8%;
+    text-align: center;
+
+}
+
+tr>td {
+
+    position: relative;
+    border: 1px solid rgba(0, 0, 0, .08);
+    padding: 1%;
+    // font-size: large;
+    font-family:Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+}
+
+.buttonID>td:last-child {
+    border-collapse: collapse;
+    border-right: none;
+}
+
+.buttonID
+{
+    border-left: none;
+    
+}
+
+.left-column {
+    position: relative;
+    color: rgb(0, 0, 0);
+    font-weight: 800;
+    width: 50%;
+}
+
+.right-column {
+    position: relative;
+    color: rgb(0, 0, 0);
+    // font-weight: 800;
+    width: 50%;
+}
+
+@media screen and (max-width:1700px)
+{
+   
+    .headerText
+    {
+        vertical-align: auto;
+        top:10px;
+    }
+}
+
+@media screen and (max-width:1530px)
+{
+   
+    .headerText
+    {
+        vertical-align: auto;
+        top:10px;
+    }
+}
+
+@media screen and (max-width:1300px)
+{
+   
+    .headerText
+    {
+        vertical-align: auto;
+        top:10px;
+    }
+}
+
+@media screen and (max-width:1215px)
+{
+   
+    .headerText
+    {
+        vertical-align: auto;
+        top:10px;
+    }
+}
+
+
+@media screen and (max-width:1200px)
+{
+   
+    .headerText
+    {
+        top:2px;
+        position: relative;
+        vertical-align: auto;
+
+    }
+}
+
+@media screen and (max-width:1150px)
+{
+   
+    .headerText
+    {
+        top:2px;
+        position: relative;
+        vertical-align: auto;
+
+    }
+}
+
+
+@media screen and(max-width:1100.9px)
+{
+    .headerText
+    {
+        top:10px;
+        text-align: center;
+        
+    }
+}
+
+@media screen and (max-width:727px)
+{
+   
+    .headerText
+    {
+        top:11px;
+        position: relative;
+        vertical-align: auto;
+
+    }
+}
+
+
+
+@media screen and (max-width:1050px)
+{
+    #update {
+        width: auto;
+        text-align: center;
+      }
+      
+      #delete {
+          text-align: center;
+          width: auto;
+      }
+      
+      #print {
+          text-align: center;
+          width: auto;
+      }
+}
+
+@media screen and (max-width:595px)
+{
+    #update {
+        width: auto;
+        text-align: center;
+        font-size: small;
+      }
+      
+      #delete {
+          text-align: center;
+          width: 10%;
+          font-size: small;
+      }
+      
+      #print {
+          text-align: center;
+          width: 10%;
+          font-size: small;
+      }
+}
+
+@media screen and (max-width:591px)
+{
+    #update {
+        width: auto;
+        text-align: center;
+        font-size: small;
+      }
+      
+      #delete {
+          text-align: center;
+          width: 10%;
+          font-size: small;
+      }
+      
+      #print {
+          text-align: center;
+          width: 10%;
+          font-size: small;
+      }
+}
+
+@media screen and (max-width:563px)
+{
+    #update {
+      position: relative;
+      width:30%;
+      }
+      
+      #delete {
+       position: relative;
+       width: 7%;
+
+      }
+      
+      #print {
+      position: relative;
+        width:7%;
+      }
+}
+
+@media screen and (max-width:553.9px)
+{
+    #update 
+    {
+        width:1rem;
+        
+    }
+        
+    #delete 
+    {
+        width:1rem;
+    }
+        
+    #print 
+    {
+        width:1rem;
+    }
+}
+
+@media screen and (max-width:545px)
+{
+    #update 
+    {
+        padding:0.1%;
+        z-index: 4;
+        
+    }
+        
+    #delete 
+    {
+        position: absolute;
+        font-size: small;
+        padding:0.001%;
+        z-index: 4;
+    }
+        
+    #print 
+    {
+        padding:0.1%;
+        z-index: 4;
+    }
+}
+
+@media screen and (max-width:363px)
+{
+    .my-class1
+    {
+        width: 40%!important;
+        min-width: unset!important;
+    }
+        
+    .my-class2
+    {
+        width: 40%!important;
+      min-width: unset!important;
+    }
+        
+    .my-class3
+    {
+        width: 40%!important;
+      min-width: unset!important;
+    }
+}

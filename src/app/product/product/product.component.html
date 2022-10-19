@@ -35,19 +35,19 @@
             <!-- Display Product name-->
             <ng-container matColumnDef="DevType" >
                 <th mat-header-cell *matHeaderCellDef mat-sort-header> Product Name </th>
-                <td mat-cell *matCellDef="let row"> {{row.DevType}}</td>
+                <td mat-cell *matCellDef="let row" routerLink="proD/{{row.DevId}}"> {{row.DevType}}</td>
             </ng-container>
             
             <!-- Display Owner name-->
             <ng-container matColumnDef="Owner">
                 <th mat-header-cell *matHeaderCellDef mat-sort-header style="text-align: center;"> Owner Name </th>
-                <td mat-cell *matCellDef="let row" >{{row.Owner}}</td>
+                <td mat-cell *matCellDef="let row" routerLink="proD/{{row.DevId}}">{{row.Owner}}</td>
             </ng-container>
             
             <!-- Display Product location  name-->
             <ng-container matColumnDef="Location">
                 <th mat-header-cell *matHeaderCellDef mat-sort-header style="text-align: center;"> Location </th>
-                <td mat-cell *matCellDef="let row"> {{row.Location}} </td>
+                <td mat-cell *matCellDef="let row" routerLink="proD/{{row.DevId}}"> {{row.Location}} </td>
             </ng-container>
             <!-- button for add new data -->
             <ng-container matColumnDef="Edit">
