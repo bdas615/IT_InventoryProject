@@ -10,8 +10,9 @@ table {
   td, th {
     width: 25%;
     color: black;
-    background-color: rgb(250, 240, 240);
+    background-color: rgb(249, 242, 242);
   }
+
 #mod{
     top: 50%;
     left: 50%;
@@ -20,14 +21,14 @@ table {
     position:fixed ;
     z-index: 100;
 }
-
 th{
-    background-color: rgb(184, 244, 111);
-    text-align: center;
-    border-color: rgb(149, 7, 7);
+    background-color: #003082;
+    border: none;
+    color: white;
 }
 td{
     border-bottom: 1px;
+    font-size: xx-small;
     border-color: rgb(255, 255, 255);
 }
 button{
@@ -84,11 +85,11 @@ h4{
             width: 100%;
           }
           
-          td, th {
+          // td, th {
             
-            color: rgb(54, 6, 6);
-            background-color: rgb(250, 240, 240);
-          }
+          //   color: rgb(54, 6, 6);
+          //   background-color: rgb(250, 240, 240);
+          // }
         #mod{
           top: 50%;
     left: 50%;
@@ -98,12 +99,12 @@ h4{
     z-index: 100;
         }
         th{
-            background-color: rgb(184, 244, 111);
-            text-align: center;
-            border-color: rgb(149, 7, 7);  
+          background-color: #003082;
+           border: none;
+           
         }
         td{
-            text-align: center;
+           
             border-bottom: 1px;
             border-color: rgb(255, 255, 255);
         }
@@ -151,7 +152,7 @@ h4{
     }
     td:hover{
       color: rgb(60, 4, 247);
-      font-size: large;
+      font-size: x-small;
     }
     button:hover
     {

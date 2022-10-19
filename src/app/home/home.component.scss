@@ -9,6 +9,7 @@
     
     .side_nav {
         width: 100%;
+        background-color: #103371;
     
     }
     
@@ -27,17 +28,20 @@
     
     mat-toolbar {
         position: fixed;
-        background-color: rgb(85, 138, 69);
+        background-color: #003082;
         height: 9%;
         z-index: 2;
     }
     .buttons1>div{
        margin: 10px;
        margin-top: 30px;
-       color: red;
-       box-shadow:0px 2px 15px 2px pink;
+       color:rgb(201, 230, 227);
+    //   
        text-align: center;
     
+    }
+    .buttons1>div:hover{
+        box-shadow:0px 2px 15px 2px ;
     }
     
 }

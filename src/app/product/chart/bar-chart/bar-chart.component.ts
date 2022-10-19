@@ -1,18 +1,16 @@
-import { DatePipe } from '@angular/common';
 import { AfterViewInit, Component, OnInit } from '@angular/core';
 import { FormBuilder, FormControl } from '@angular/forms';
 import { ActivatedRoute } from '@angular/router';
+import { DatePipe } from '@angular/common';
 import { Chart, registerables } from 'chart.js';
-import * as moment from 'moment';
-
 Chart.register(...registerables);
 @Component({
-  selector: 'app-pie-chart',
-  templateUrl: './pie-chart.component.html',
-  styleUrls: ['./pie-chart.component.scss'],
+  selector: 'app-bar-chart',
+  templateUrl: './bar-chart.component.html',
+  styleUrls: ['./bar-chart.component.scss'],
   providers: [DatePipe]
 })
-export class PieChartComponent implements OnInit {
+export class BarChartComponent implements OnInit {
  
   constructor(private activ:ActivatedRoute,private builder:FormBuilder,public datepipe: DatePipe) {
     this.chartFrom=this.builder.group({
@@ -31,7 +29,7 @@ export class PieChartComponent implements OnInit {
   condition:any;
   chartFrom:any;
   devType:any;
-  disabl!:boolean;
+  disabl!:boolean
   disabl1=true;
   latest_from:any;
   latest_to:any;
@@ -54,9 +52,9 @@ export class PieChartComponent implements OnInit {
   mobile2=0
   misc2=0
   phone2=0
- 
   a:any;
   c:any;
+  con=true;
   chart(){
 
     console.log("hello"+this.m.from+"hello");
@@ -113,10 +111,10 @@ export class PieChartComponent implements OnInit {
     }
     
   }
-     this.disabl1=false;
-     this.disabl=true;
-    this.c= new Chart("myChart3", {
-      type: 'pie',
+  this.disabl1=false;
+    this.disabl=true;
+    this.c= new Chart("myChart2", {
+      type: 'bar',
       data: {
   
           labels: ['Laptop/Desktop', 'Server', 'Printer', 'Polycom', 'Mobile/Phone', 'Monitor','Misc'],
@@ -185,7 +183,7 @@ export class PieChartComponent implements OnInit {
   
   }
   ngOnInit(): void {
-    this.condition= this.activ.snapshot.data['datapie']
+    this.condition= this.activ.snapshot.data['databar']
     this.condition=JSON.parse(this.condition)
     for(let x of this.condition)
     {
@@ -215,13 +213,15 @@ export class PieChartComponent implements OnInit {
     else{
       this.phone1++
     }
-   
+    this.con=false;
   }
-   new Chart("myChart", {
+
+
+   new Chart("myChart1", {
 
 
 
-    type: 'pie',
+    type: 'bar',
 
     data: {
 

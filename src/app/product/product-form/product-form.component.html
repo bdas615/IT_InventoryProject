@@ -29,9 +29,18 @@
                     <div class="mb-3">
                         <label  class="form-label">devType</label>
                        &nbsp; <span *ngIf="devTypefunction&&devTypefunction.invalid">required</span>
-                       
-                        <input  formControlName="DevType" type="text" class="form-control"
-                             placeholder="Laptop….">
+                       <select name="watches" formControlName="DevType" id="watches">
+                        <option value="Laptop/Desktop">Laptop/Desktop</option>
+                        <option value="Misc">Misc</option>
+                        <option value="Mobile/Phone">Mobile/Phone</option>
+                        <option value="Monitor">Monitor</option>
+                        <option value="Polycom">Polycom</option>
+                        <option value="Printer">Printer</option>
+                        <option value="Server">Server</option>
+                        
+                      </select>
+                        <!-- <input  formControlName="DevType" type="text" class="form-control"
+                             placeholder="Laptop…."> -->
                             
                     </div>
                     <div class="mb-3">
@@ -76,7 +85,7 @@
                     <div class="mb-3">
                         <label  class="form-label">purchase_date</label>
                         &nbsp; <span *ngIf="purchase_datefunction && purchase_datefunction.invalid">required</span>
-                        <input formControlName="PurchaseDate"  type="datetime-local" class="form-control"
+                        <input formControlName="PurchaseDate"  type="date" class="form-control"
                              placeholder="Laptop….">
                     </div>
         </div>
@@ -84,13 +93,13 @@
                     <div class="mb-3">
                         <label  class="form-label">warrantyExpDate</label>
                         &nbsp; <span *ngIf="warrantyExpDatefunction && warrantyExpDatefunction.invalid">required</span>
-                        <input formControlName="WarrantyExpDate" type="datetime-local" class="form-control"
+                        <input formControlName="WarrantyExpDate" type="date" class="form-control"
                              placeholder="Laptop….">
                     </div>
                     <div class="mb-3">
                         <label  class="form-label">ServiceExpDate</label>
                         &nbsp; <span *ngIf="serviceExpDatefunction && serviceExpDatefunction.invalid">required</span>
-                        <input formControlName="ServiceExpDate" type="datetime-local" class="form-control"
+                        <input formControlName="ServiceExpDate" type="date" class="form-control"
                              placeholder="Laptop….">
                     </div>
                     <div class="mb-3">

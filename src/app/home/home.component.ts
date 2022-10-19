@@ -7,6 +7,7 @@ import { ServiceService } from '../product/service.service';
   styleUrls: ['./home.component.scss']
 })
 export class HomeComponent implements OnInit {
+ 
 z:any
   constructor(private ser:ServiceService) {
     this.z=ser.con;
@@ -18,6 +19,10 @@ console.log(this.z)
    }
 
   ngOnInit(): void {
+    var w = window.innerWidth;
+    var h = window.innerHeight;
+    console.log(w);
+    console.log(h);
   }
 
 }

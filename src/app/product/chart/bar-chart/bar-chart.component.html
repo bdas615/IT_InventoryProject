@@ -1,0 +1,23 @@
+
+<span  [hidden]="disabl">
+  <form [formGroup]="chartFrom"   (ngSubmit)="updateData()">
+
+    from
+     <input class="input" formControlName="from" type="date">
+ 
+ 
+    To
+     <input class="input" formControlName="to" type="date">
+ &nbsp;
+ <button type="submit" class="btn btn-primary">button</button>
+ </form>
+</span>
+<button type="button" style="margin-left: 2%;background-color:#ef9a9a;"class="btn btn-accent"(click)="reloadCurrentPage()" [hidden]="disabl1">Reset</button>
+<div  [hidden]="disabl">
+<canvas id="myChart1"></canvas>
+</div>
+<div  >
+<canvas id="myChart2"></canvas>
+</div>
+<br>
+
