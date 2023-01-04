@@ -15,6 +15,7 @@ export class ProductDetailsComponent implements OnInit {
 
   id:any;
   a:any;
+  b:any;
   data:any;
   x:any;
   token:any;
@@ -34,6 +35,10 @@ export class ProductDetailsComponent implements OnInit {
   MacAddress!:string
   IPAddress!:string
   CellNumber!:string
+  idValueTrue!:boolean
+  idValueFalse!:boolean
+  spinner!:boolean;
+  internalServerError!:boolean;
 
   entryForm = new FormGroup({
 
@@ -56,20 +61,27 @@ export class ProductDetailsComponent implements OnInit {
     IPAddress: new FormControl(''),
     CellNumber: new FormControl('')
   })
-
+  
   constructor(private serv:ServiceService,
-    private route:ActivatedRoute,
-    private http:HttpClient) { }
+              private route:ActivatedRoute,
+              private http:HttpClient,
+              private router:Router) { }
 
-  ngOnInit(): void {
+  ngOnInit(): void { 
+
+    this.idValueTrue = true;
+    this.idValueFalse = false;
     this.x = this.route.snapshot.paramMap.get(('id'));
     this.id =this.x
     this.callContentValue(this.x);
+
   }
 
   callContentValue(c:any)
   {
-    
+
+    let tryCount = 2;
+   
     let x = 
     {
       "token":'A12F7A58-842D-4111-A44D-5F8C4E1AA521',
@@ -81,7 +93,7 @@ export class ProductDetailsComponent implements OnInit {
   
     }
     ),catchError((e:any)=>{
-      e='Error Loading data!!Please try again....';
+      this.router.navigate(['/error'])
       return e;
     })
     )
@@ -92,8 +104,6 @@ export class ProductDetailsComponent implements OnInit {
     })
   }
 
-
-
   deleteUser(id:any)
   {
     let x={
@@ -101,12 +111,24 @@ export class ProductDetailsComponent implements OnInit {
       "token":`A12F7A58-842D-4111-A44D-5F8C4E1AA521`,
       "DevId":id
 }
-    
-    this.http.post<any>("https://tools.brandinstitute.com/wsInventory/wsInventory.asmx/Device_Del",x).subscribe(res=>{ 
-    // console.log(res)
-    console.log('Delete Successful')
-  }) 
+    setTimeout(()=>{
+      this.http.post<any>("https://tools.brandinstitute.com/wsInventory/wsInventory.asmx/Device_Del",x).pipe(catchError((err:any)=>{
+
+      this.router.navigate(['/error']);
+      return err;
+      })).subscribe(res=>{ 
+      console.log(res)
+      console.log('Delete Successful');
+      }) 
+  })
+  
   }
+
+  postDeleteFunction()
+  {
+     this.router.navigate(['/'])
+  }
+  
 
   name = 'ExcelSheet.xlsx';
   exportToExcel()

@@ -1,32 +1,37 @@
-
-
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <mat-toolbar>
-   
-    <span style="color:white">Inventory</span>
+    <span style="color:white" id="inv">Inventory</span>
     <span class="example-spacer"></span>
-    
-    
   </mat-toolbar>
   
+  <!-- sidenav -->
   <div class="buttons">
-    <span>Home</span><span routerLink="/pieChart">chart</span><span>Blogs</span><span>Contact</span><span>About</span><span>Feedback</span>
- </div>
-  <!-- side-nav -->
+    <span>Home</span>
+    <span routerLink="/pieChart">Pie chart</span>
+    <span routerLink="/barChart">Bar Graph</span>
+    <span>Blogs</span>
+    <span>Contact</span>
+    <span>About</span>
+  </div>
+  
+<!-- side-nav -->
 <span class="s">
-
     <mat-drawer-container class="example-container">
     <mat-drawer class="side_nav" mode="side" opened>
-     
       <div class="buttons1 animate__animated animate__backInLeft" >
-        <div>Home</div><div routerLink="/barChart">Bar Graph</div> <div routerLink="/pieChart">Pie Graph</div><div>Blog</div><div>Contact</div><div>About</div><div>Feedback</div>
+        <div>Home</div>
+        <div routerLink="/barChart">Bar Graph</div>
+        <div routerLink="/pieChart">Pie Graph</div>
+        <div>Blog</div>
+        <div>Contact</div>
+        <div>About</div>
      </div>
     </mat-drawer>
   </mat-drawer-container>
   
-<div class="outlet ">
+<div class="outlet">
   <router-outlet></router-outlet>
  </div>
-
 </span> 
 
 

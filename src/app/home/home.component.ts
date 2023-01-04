@@ -9,13 +9,10 @@ import { ServiceService } from '../product/service.service';
 export class HomeComponent implements OnInit {
  
 z:any
-  constructor(private ser:ServiceService) {
+  constructor(private ser:ServiceService)
+   {
     this.z=ser.con;
-console.log(this.z)
-
-
-
-
+    console.log(this.z)
    }
 
   ngOnInit(): void {

@@ -4,6 +4,7 @@ import { FormBuilder, FormControl, FormGroup, Validators } from '@angular/forms'
 import { ActivatedRoute, Router } from '@angular/router';
 import { catchError } from 'rxjs';
 import { ServiceService } from '../service.service';
+
 export interface UserData {
   id: number;
   devType:string,
@@ -22,11 +23,13 @@ export interface UserData {
   IPAddress:string,
   CellNumber:string
 }
+
 @Component({
   selector: 'app-product-form',
   templateUrl: './product-form.component.html',
   styleUrls: ['./product-form.component.scss']
 })
+
 export class ProductFormComponent implements OnInit {
   userLogin=new FormGroup({
    

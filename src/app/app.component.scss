@@ -4,3 +4,28 @@
         transform: rotate(90deg);
     }
     }
+
+*
+{
+    padding:0;
+    margin:0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: none;
+}
+
+
+
+@media screen and (max-width:750px)
+{
+.bg-dark
+{
+    border:2px solid red;
+}
+.logo
+{
+    // background:#0082e6;
+    // height:80px;
+}
+
+}

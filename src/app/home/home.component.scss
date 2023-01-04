@@ -1,88 +1,517 @@
-@media screen and(min-width:1100px) {
+//all screens above 1100px
+@media screen and (min-width:1100px) 
+{
+    // sidenav
     .example-container {
         width: 120px;
         height: 100%;
         clear: none;
-       
         position: fixed;
     }
-    
-    .side_nav {
+    .side_nav 
+    {
         width: 100%;
-        background-color: #103371;
-    
+        background-image:linear-gradient(#103371,#2f6ad0) ;
     }
-    
     .outlet {
-    
+        
         padding: 1px;
         width: 90%;
         float: right;
-        margin: 5px;
+        margin-left: 5px;
     }
     
     .s {
+       
         position: relative;
         top: 5%;
     }
     
     mat-toolbar {
+        
         position: fixed;
-        background-color: #003082;
+        // background-color: #003082;
+        background-image:linear-gradient(to right,#103371,#2f6ad0);
         height: 9%;
         z-index: 2;
-    }
+    } 
     .buttons1>div{
        margin: 10px;
        margin-top: 30px;
-       color:rgb(201, 230, 227);
-    //   
+       color:rgb(201, 230, 227);  
        text-align: center;
     
     }
     .buttons1>div:hover{
         box-shadow:0px 2px 15px 2px ;
     }
-    
 }
 
-@media screen and(max-width:500px) {
-
+//all screens above 960px and below 1100px
+@media screen and(min-width:960px)and(max-width:1100px)
+{
+   
     .example-container {
-        width: 15%;
+        width: 120px;
         height: 100%;
+        clear: none;
+        position: fixed;
+        
+    }
+    .side_nav 
+     {
+        width: 100%;
+        background-image:linear-gradient(#103371,#2f6ad0);
+         
+    }
+    .outlet 
+    {
+        position: relative;
+        padding: 1px;
+        width: 90%;
+        float: right;
+        left: 25px;
+    }
+    .s {
+        position: relative;
+        top: 5%;
+        
+    }
+    mat-toolbar{
+        position: fixed;
+        background-image:linear-gradient(to right,#103371,#2f6ad0);
+        height: 9%;
+        z-index: 2;
+    }
+    .buttons1>div{
+        margin: 10px;
+        margin-top: 30px;
+        color:rgb(201, 230, 227);  
+        text-align: center;
+    }
+    .buttons1>div:hover{
+        box-shadow:0px 2px 15px 2px ;
+    }   
+}
+
+//all screens above 900px and below 960px
+@media screen and(min-width:900px)and(max-width:960px)
+{
+    .example-container 
+    {
+        width: 120px;
+        height: 100%;
+        clear: none;
+        position: fixed; 
+    }
+    .side_nav 
+     {
+        width: 100%;
+        background-image:linear-gradient(#103371,#2f6ad0);
+         
+    }
+    .outlet 
+    {
+        position: relative;
+        padding: 1px;
+        width: 90%;
+        float: right;
+        left: 30px;
+    }
+    .s {
+        position: relative;
+        top: 5%;
+        
+    }
+    mat-toolbar{
+        position: fixed;
+        background-image:linear-gradient(to right,#103371,#2f6ad0);
+        height: 9%;
+        z-index: 2;
+    }
+    .buttons1>div{
+        margin: 10px;
+        margin-top: 30px;
+        color:rgb(201, 230, 227);  
+        text-align: center;
+    }
+    .buttons1>div:hover{
+        box-shadow:0px 2px 15px 2px ;
+    }
+}
+
+#a{
+    z-index: 1111;
+}
+//all screens above 845px and below 960px
+@media screen and(min-width:845px)and(max-width:900px)
+{
+    .example-container 
+    {
+        width: 120px;
+        height: 100%;
+        clear: none;
+        position: fixed; 
+    }
+    .side_nav 
+     {
+        width: 100%;
+        background-image:linear-gradient(#103371,#2f6ad0);
+         
+    }
+    .outlet 
+    {
+        position: relative;
+        padding: 1px;
+        width: 90%;
+        float: right;
+        left: 35px;
+    }
+    .s {
+        position: relative;
+        top: 5%;
+        
+    }
+    mat-toolbar{
+        position: fixed;
+        background-image:linear-gradient(to right,#103371,#2f6ad0);
+        height: 9%;
+        z-index: 2;
+    }
+    .buttons1>div{
+        margin: 10px;
+        margin-top: 30px;
+        color:rgb(201, 230, 227);  
+        text-align: center;
+    }
+    .buttons1>div:hover{
+        box-shadow:0px 2px 15px 2px ;
+    }
+}
+
+//all screens above 810px and below 845px
+@media screen and(min-width:810px)and(max-width:845px)
+{
+    .example-container 
+    {
+        width: 120px;
+        height: 100%;
+        clear: none;
+        position: fixed; 
+    }
+    .side_nav 
+     {
+        width: 100%;
+        background-image:linear-gradient(#103371,#2f6ad0);
+         
+    }
+    .outlet 
+    {
+        position: relative;
+        padding: 1px;
+        width: 90%;
+        float: right;
+        left: 40px;
+    }
+    .s {
+        position: relative;
+        top: 5%;
+        
+    }
+    mat-toolbar{
+        position: fixed;
+        background-image:linear-gradient(to right,#103371,#2f6ad0);
+        height: 9%;
+        z-index: 2;
+    }
+    .buttons1>div{
+        margin: 10px;
+        margin-top: 30px;
+        color:rgb(201, 230, 227);  
+        text-align: center;
+    }
+    .buttons1>div:hover{
+        box-shadow:0px 2px 15px 2px ;
+    }
+}
+
+//all screens above 755px and below 810px
+@media screen and(min-width:755px)and(max-width:810px)
+{
+    .example-container 
+    {
+        width: 120px;
+        height: 100%;
+        clear: none;
+        position: fixed; 
+    }
+    .side_nav 
+     {
+        width: 100%;
+        background-image:linear-gradient(#103371,#2f6ad0);
+         
+    }
+    .outlet 
+    {
+        position: relative;
+        padding: 1px;
+        width: 90%;
+        float: right;
+        left: 50px;
+    }
+    .s {
+        position: relative;
+        top: 5%;
+        
+    }
+    mat-toolbar{
+        position: fixed;
+        background-image:linear-gradient(to right,#103371,#2f6ad0);
+        height: 9%;
+        z-index: 2;
+    }
+    .buttons1>div{
+        margin: 10px;
+        margin-top: 30px;
+        color:rgb(201, 230, 227);  
+        text-align: center;
+    }
+    .buttons1>div:hover{
+        box-shadow:0px 2px 15px 2px ;
+    }
+}
+
+//all screens above 750px and below 755px
+@media screen and(min-width:751px)and(max-width:755px)
+{
+    .example-container 
+    {
+        width: 120px;
+        height: 100%;
+        clear: none;
+        position: fixed; 
+    }
+    .side_nav 
+     {
+       
+        width: 100%;
+        background-image:linear-gradient(#103371,#2f6ad0);
+         
+    }
+    .outlet 
+    {
+        position: relative;
+        padding: 1px;
+        width: 90%;
+        float: right;
+        left: 50px;
+    }
+    .s {
+        position: relative;
+        top: 5%;
+        
+    }
+    mat-toolbar
+    {
+        position: fixed;
+        background-image:linear-gradient(to right,#103371,#2f6ad0);
+        height: 9%;
+        z-index: 2;
+    }
+    .buttons1>div{
+        margin: 10px;
+        margin-top: 30px;
+        color:rgb(201, 230, 227);  
+        text-align: center;
+    }
+    .buttons1>div:hover{
+        box-shadow:0px 2px 15px 2px ;
+    }
+}
+//all screens above 500px and below 750px
+@media screen and(min-width:547px)and(max-width:751px)
+{   
+    .outlet 
+    {
+        margin: 12px;
+        width: 95%;
+        float: left;
+    }
+
+    .s 
+    {
+        position: relative;
+        top: 10%; 
+    }
+
+    mat-toolbar {
+        
+        position: fixed;
+        background-image:linear-gradient(to right,#103371,#2f6ad0);
+        height: 5%;
+        z-index: 2;
+    }
+
+    span 
+    {
+        color: #000;
+        
+    }
+
+    .buttons 
+    {
+        height: 5%;
+        width: 100%;
+        top: 5%;
+        color: #000;
+        position: fixed;
+        z-index: 1;
+        background-color: rgb(255, 255, 255);
+        box-shadow:0px 0px 10px 10px #7cacff;
+    }
+
+    .buttons>span
+    {
+        margin-left: 7%;
+    }
+}
+
+@media screen and(min-width:500px)and(max-width:547.9px)
+{      
+        .outlet 
+        {
+            margin: 12px;
+            width: 95%;
+            float: left;
+        }
+    
+        .s 
+        {
+            position: relative;
+            top: 10%; 
+        }
+    
+        mat-toolbar {
+            
+            position: fixed;
+            background-image:linear-gradient(to right,#103371,#2f6ad0);
+            height: 5%;
+            z-index: 2;
+        }
+    
+        span 
+        {
+            color: #000;
+            font-size: small;
+        }
+    
+        .buttons 
+        {
+            height: 5%;
+            width: 100%;
+            top: 5%;
+            color: #000;
+            position: fixed;
+            z-index: 1;
+            background-color: rgb(255, 255, 255);
+            box-shadow:0px 0px 10px 10px #7cacff;
+        }
+    
+        .buttons>span
+        {   
+            margin-left: 7%;
+        }
+ }
+
+ @media screen and(min-width:501px)and(max-width:537.9px)
+ {
+    .outlet 
+    {
+        margin: 12px;
+        width: 95%;
+        float: left;
+    }
+
+    .s 
+    {
+        position: relative;
+        top: 10%; 
+    }
+
+    mat-toolbar {
+        position: fixed;
+        background-image:linear-gradient(to right,#103371,#2f6ad0);
+        height: 5%;
+        z-index: 2;
+    }
+
+    span 
+    {
+        color: #000;
+        font-size: small;
+    }
+
+    .buttons 
+    {
+        height: 5%;
+        width: 100%;
+        top: 5%;
+        color: #000;
+        position: fixed;
+        z-index: 1;
+        background-color: rgb(255, 255, 255);
+        box-shadow:0px 0px 10px 10px #7cacff;
+    }
+
+    .buttons>span
+    {   
+        margin-left: 7%;
+    }
+ }
+
+//all screens above 500px 
+@media screen and(max-width:501px) 
+{
+    .example-container {
         clear: none;
         float: left;
         display: none;
     }
+    
+    // .side_nav {
+    //     width: 100%;
+    //     background-image:linear-gradient(#103371,#0863ff) ;
+    // }
 
-    .side_nav {
-        width: 100%;
-
-    }
-
-
-    .outlet {
-        
+    .outlet 
+    {
+        position: relative;
         margin: 12px;
+        left: 9px;
+        margin-top: 32px;
+        // margin-left: 90px;
+        // margin-right: 50%;
+        align-items: center;
         width: 95%;
         float: right;
     }
 
     .s {
         position: relative;
-        top: 7%;
+        top: 6%;
     }
 
     mat-toolbar {
+      
         position: fixed;
-        background-color: rgb(85, 138, 69);
+        background-image:linear-gradient(to right,#103371,#2f6ad0);
         height: 5%;
         z-index: 2;
     }
 
     span {
         color: #000;
+        font-size: unset;
     }
 
     .buttons {
@@ -97,159 +526,79 @@
     }
     .buttons>span{
         margin-left:3%;
-
     }
 }
-@media screen and(min-width:500px)and(max-width:750px){
-   
-    .example-container {
-        width: 15%;
-        height: 100%;
-        clear: none;
-        float: left;
-        display: none;
+
+@media screen and(max-width:380px)
+{
+    .buttons
+    {
+        display: flex;
+        font-size: small;  
     }
+}
 
-    .side_nav {
-        width: 100%;
+@media screen and(max-width:335px)
+{
+    // .buttons
+    // {
+    //     display: flex;
+    //     font-size: small;  
+    // }
+}
 
-    }
+// @media screen and (width:640px)and(height:360px)
+// {
+//     .example-container {
+//         width: 15%;
+//         height: 100%;
+//         clear: none;
+//         float: left;
+//         display: none;
+//     }
 
-    .outlet {
+//     .side_nav {
+//         width: 100%;
+
+//     }
+
+//     .outlet {
+
+//         margin: 12px;
+//         width: 99%;
+//         float: left;
+//     }
+
+//     .s {
+//         position: relative;
+//         top:50px;
+//     }
+
+//     mat-toolbar {
+//         position: fixed;
+//         background-color: rgb(85, 138, 69);
+//         height: 33px;
+//         z-index: 2;
         
-        margin: 12px;
-        width: 95%;
-        float: left;
-    }
+//     }
 
-    .s {
-        position: relative;
-        top: 10%;
-    }
+//     span {
+//         color: #000;
+//     }
 
-    mat-toolbar {
-        position: fixed;
-        background-color: rgb(85, 138, 69);
-        height: 5%;
-        z-index: 2;
-    }
+//     .buttons {
+//         height: 25px;
+//         width: 100%;
+//         top: 34px;
+//         color: #000;
+//         position: fixed;
+//         z-index: 1;
+//         background-color: rgb(255, 255, 255);
+//         box-shadow:0px 2px 10px 10px pink;
 
-    span {
-        color: #000;
-    }
+//     }
+//     .buttons>span{
+//         margin-left: 40px;
 
-    .buttons {
-        height: 5%;
-        width: 100%;
-        top: 5%;
-        color: #000;
-        position: fixed;
-        z-index: 1;
-        background-color: rgb(255, 255, 255);
-        box-shadow:0px 0px 10px 10px pink;
-    }
-    .buttons>span{
-        margin-left: 7%;
-    }
-}
-@media screen and(width:640px)and(height:360px){
-    .example-container {
-        width: 15%;
-        height: 100%;
-        clear: none;
-        float: left;
-        display: none;
-    }
-
-    .side_nav {
-        width: 100%;
-
-    }
-
-    .outlet {
-
-        margin: 12px;
-        width: 99%;
-        float: left;
-    }
-
-    .s {
-        position: relative;
-        top:50px;
-    }
-
-    mat-toolbar {
-        position: fixed;
-        background-color: rgb(85, 138, 69);
-        height: 33px;
-        z-index: 2;
-        
-    }
-
-    span {
-        color: #000;
-    }
-
-    .buttons {
-        height: 25px;
-        width: 100%;
-        top: 34px;
-        color: #000;
-        position: fixed;
-        z-index: 1;
-        background-color: rgb(255, 255, 255);
-        box-shadow:0px 2px 10px 10px pink;
-
-    }
-    .buttons>span{
-        margin-left: 40px;
-
-    }
-}
-@media screen and(min-width:750px)and(max-width:1100px){
-   
-    .example-container {
-        width: 120px;
-        height: 100%;
-        clear: none;
-       
-        position: fixed;
-    }
-    
-    .side_nav {
-        width: 100%;
-    
-    }
-    
-    .outlet {
-    
-        padding: 1px;
-        width: 80%;
-        float: right;
-        margin: 15px;
-    }
-    
-    .s {
-        position: relative;
-        top: 5%;
-    }
-    
-    mat-toolbar {
-        position: fixed;
-        background-color: rgb(85, 138, 69);
-        height: 9%;
-        z-index: 2;
-    }
-    .buttons1>div{
-       margin: 10px;
-       margin-top: 30px;
-       color: red;
-       box-shadow:0px 2px 15px 2px pink;
-       text-align: center;
-    
-    }
-    
-}
-#a{
-    z-index: 1111;
-}
+//     }
+// }

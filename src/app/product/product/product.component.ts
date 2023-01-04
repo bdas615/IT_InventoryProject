@@ -26,8 +26,6 @@ export interface UserData {
 })
 export class ProductComponent implements OnInit, AfterViewInit{
   
-
- 
    editData!:UserData;
    a:any;
    b:any;
