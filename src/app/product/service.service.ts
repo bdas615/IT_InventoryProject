@@ -2,11 +2,13 @@ import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Router } from '@angular/router';
 import { BehaviorSubject, catchError, map, Observable } from 'rxjs';
+
 interface xx {
   data: string;
   msg: string;
   total: string;
 }
+
 @Injectable({
   providedIn: 'root'
 })
