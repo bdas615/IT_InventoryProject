@@ -11,7 +11,7 @@
     .side_nav 
     {
         width: 100%;
-        background-image:linear-gradient(#103371,#2f6ad0) ;
+        background-image:linear-gradient(#003082,#5788db);
     }
     .outlet {
         
@@ -61,7 +61,7 @@
     .side_nav 
      {
         width: 100%;
-        background-image:linear-gradient(#103371,#2f6ad0);
+        background-image:linear-gradient(#003082,#5788db);
          
     }
     .outlet 
@@ -107,7 +107,7 @@
     .side_nav 
      {
         width: 100%;
-        background-image:linear-gradient(#103371,#2f6ad0);
+        background-image:linear-gradient(#003082,#5788db);
          
     }
     .outlet 
@@ -156,7 +156,7 @@
     .side_nav 
      {
         width: 100%;
-        background-image:linear-gradient(#103371,#2f6ad0);
+        background-image:linear-gradient(#003082,#5788db);
          
     }
     .outlet 
@@ -202,7 +202,7 @@
     .side_nav 
      {
         width: 100%;
-        background-image:linear-gradient(#103371,#2f6ad0);
+        background-image:linear-gradient(#003082,#5788db);
          
     }
     .outlet 
@@ -248,7 +248,7 @@
     .side_nav 
      {
         width: 100%;
-        background-image:linear-gradient(#103371,#2f6ad0);
+        background-image:linear-gradient(#003082,#5788db);
          
     }
     .outlet 
@@ -295,7 +295,7 @@
      {
        
         width: 100%;
-        background-image:linear-gradient(#103371,#2f6ad0);
+        background-image:linear-gradient(#003082,#5788db);
          
     }
     .outlet 
@@ -311,8 +311,7 @@
         top: 5%;
         
     }
-    mat-toolbar
-    {
+    mat-toolbar{
         position: fixed;
         background-image:linear-gradient(to right,#103371,#2f6ad0);
         height: 9%;
@@ -347,7 +346,7 @@
     mat-toolbar {
         
         position: fixed;
-        background-image:linear-gradient(to right,#103371,#2f6ad0);
+        background-image:linear-gradient(to right,#003082,#5788db);
         height: 5%;
         z-index: 2;
     }
@@ -394,7 +393,7 @@
         mat-toolbar {
             
             position: fixed;
-            background-image:linear-gradient(to right,#103371,#2f6ad0);
+            background-image:linear-gradient(to right,#003082,#5788db);
             height: 5%;
             z-index: 2;
         }
@@ -440,7 +439,7 @@
 
     mat-toolbar {
         position: fixed;
-        background-image:linear-gradient(to right,#103371,#2f6ad0);
+        background-image:linear-gradient(to right,#003082,#5788db);
         height: 5%;
         z-index: 2;
     }
@@ -469,31 +468,29 @@
     }
  }
 
-//all screens above 500px 
+//all screens above 501px 
 @media screen and(max-width:501px) 
 {
-    .example-container {
+    #inv
+    {
+        font-size: small;
+    }
+    .example-container 
+    {
         clear: none;
         float: left;
         display: none;
     }
     
-    // .side_nav {
-    //     width: 100%;
-    //     background-image:linear-gradient(#103371,#0863ff) ;
-    // }
-
     .outlet 
     {
         position: relative;
         margin: 12px;
-        left: 9px;
+        left: 0px;
         margin-top: 32px;
-        // margin-left: 90px;
-        // margin-right: 50%;
         align-items: center;
         width: 95%;
-        float: right;
+        float: left; 
     }
 
     .s {
@@ -502,30 +499,32 @@
     }
 
     mat-toolbar {
-      
         position: fixed;
-        background-image:linear-gradient(to right,#103371,#2f6ad0);
+        background-image:linear-gradient(to right,#003082,#5788db);
         height: 5%;
         z-index: 2;
     }
 
     span {
         color: #000;
-        font-size: unset;
+        font-size: inherit;
     }
 
-    .buttons {
+    .buttons 
+    { 
         width: 100%;
         top: 5%;
         color: #000;
         position: fixed;
         z-index: 1;
         background-color: rgb(255, 255, 255);
-        box-shadow:0px 2px 15px 2px pink;
-
+        box-shadow:0px 0px 10px 10px #7cacff;
     }
+
     .buttons>span{
-        margin-left:3%;
+        justify-content: space-evenly;
+        font-size: small;
+        margin-left:4%;
     }
 }
 
@@ -533,6 +532,7 @@
 {
     .buttons
     {
+        
         display: flex;
         font-size: small;  
     }

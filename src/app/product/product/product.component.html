@@ -1,14 +1,15 @@
-<ng-container *ngIf="condition.length !=0">
-    <mat-form-field style="width:100%;" id="field" appearance="standard">
+<ng-container *ngIf="condition.length !=0" >
+    <mat-form-field style="width:100%;" id="field" appearance="standard" >
         <mat-label>Search</mat-label>
-        <input matInput (keyup)="applyFilter($event)" placeholder="Ex. Laptop…" #input>
+        <input matInput (keyup)="applyFilter($event)" placeholder="Ex. Laptop…" #input  >
     </mat-form-field>
+    <!-- style="border:2px solid red;" -->
 <!-- Modal -->
-<!-- Button trigger modal -->
-
-
-<!-- Modal -->
-<div class="modal fade" id="staticBackdrop"[hidden]="ss" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+<div class="modal fade" id="staticBackdrop"[hidden]="ss" 
+        data-bs-backdrop="static" 
+        data-bs-keyboard="false" 
+        tabindex="-1" aria-labelledby="staticBackdropLabel" 
+        aria-hidden="true" >
   <div class="modal-dialog" >
     <div class="modal-content" id="alert_text1" >
       <div class="modal-header"style="background-color:green">
@@ -17,7 +18,7 @@
       </div>
       <div class="modal-body">
         if you want to delete this data then you please  Confirm.<br>
-        once if you are click on confirm it will parmanently delete.
+        once if you are click on confirm it will permanently delete.
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" >Close</button>
@@ -52,7 +53,7 @@
             <!-- button for add new data -->
             <ng-container matColumnDef="Edit">
                 <th mat-header-cell *matHeaderCellDef>
-                    <button type="button" class="btn btn-primary"  routerLink="/productForm">
+                    <button type="button" class="btn btn-primary"  routerLink="/productForm" id="addNewData">
                         Add new data
                     </button>
                 </th>
