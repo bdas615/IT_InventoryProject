@@ -18,6 +18,7 @@ import { PieChartComponent } from './chart/pie-chart/pie-chart.component';
 import { BarChartComponent } from './chart/bar-chart/bar-chart.component';
 import { ProductDetailsComponent } from './product-details/product-details.component';
 import { MatButtonModule } from '@angular/material/button';
+import { MatIconModule } from '@angular/material/icon';
 
 @NgModule({
   declarations: [
@@ -39,7 +40,8 @@ import { MatButtonModule } from '@angular/material/button';
     MatPaginatorModule,
     HttpClientModule,
     ReactiveFormsModule,
-    MatButtonModule
+    MatButtonModule,
+    MatIconModule
   ],
   providers:[ResolverService],
   exports:[

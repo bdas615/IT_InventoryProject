@@ -1,209 +1,269 @@
-table {
+@media screen and(max-width:1100px) {
+  table {
     width: 100%;
   }
-  
+
+  #ngContainer {
+    
+    position: relative;
+    width: 90%;
+  }
+  table>.ng-container>th
+  {
+    border:2px solid red;
+  }
+}
+
+
+table {
+  width: 100%;
+}
+
+#field 
+{
+  width:20%;
+}
+
+//container box
+#ngContainer {
+  position: relative;
+  width: 90%;
+}
+
+.mat-form-field {
+  width: 100%;
+
+}
+
+td,
+th {
+  width: 25%;
+  color: black;
+  background-color: rgb(249, 242, 242);
+}
+
+#mod {
+  top: 50%;
+  left: 50%;
+  transform: translate(-45%, -45%);
+  text-align: center;
+  position: fixed;
+  z-index: 100;
+}
+
+th {
+  background-color: #003082;
+  border: none;
+  color: white;
+}
+
+td {
+  border-bottom: 1px;
+  font-size: xx-small;
+  border-color: rgb(255, 255, 255);
+}
+
+button {
+  margin: 5px;
+}
+
+.btn-close {
+  background-color: red;
+}
+
+.btn-warning {
+  float: left;
+  width: 95px;
+  padding: 0%;
+  margin-top: 4px;
+  margin-bottom: 4px;
+  border: none;
+  background-color: aliceblue;
+  box-shadow: 1px 2px 15px 1px rgb(225, 240, 171);
+}
+
+h4 {
+  background-color: rgb(8, 199, 78);
+  margin: 0%;
+  padding: 0%;
+  border-radius: inherit;
+}
+
+.btn-danger {
+  float: left;
+  width: 95px;
+  padding: 0%;
+  margin-top: 4px;
+  margin-bottom: 4px;
+  background-color: rgb(255, 40, 40);
+  box-shadow: 1px 2px 15px 1px rgb(165, 163, 163);
+}
+
+.btn-primary {
+  width: 200px;
+  background-color: rgb(76, 29, 247);
+  box-shadow: 1px 2px 15px 1px rgb(12, 23, 243);
+}
+
+.modal-footer>.btn-primary {
+  font-size: small;
+  padding: 0;
+  height: 40px;
+  width: 100px;
+  background-color: rgb(76, 29, 247);
+  box-shadow: 1px 2px 15px 1px rgb(12, 23, 243);
+}
+
+//520 px and lower
+@media screen and(max-width:520px) {
+  #ngContainer {
+    position: relative;
+    width: fit-content;
+  }
+}
+
+//500 px and lower
+@media screen and(max-width:500px) {
+  table {
+    width: 100%;
+    height: 100%;
+  }
+
   .mat-form-field {
     font-size: 14px;
     width: 100%;
   }
-  
-  td, th {
-    width: 25%;
-    color: black;
-    background-color: rgb(249, 242, 242);
+
+  #ngContainer {
+
+    position: relative;
+    width: fit-content;
   }
 
-#mod{
+  // td, th {
+
+  //   color: rgb(54, 6, 6);
+  //   background-color: rgb(250, 240, 240);
+  // }
+  #mod {
+
     top: 50%;
     left: 50%;
-    transform: translate(-45%,-45%);
+    transform: translate(-45%, -45%);
     text-align: center;
-    position:fixed ;
+    position: relative;
     z-index: 100;
-}
-th{
+  }
+
+  th {
+
     background-color: #003082;
     border: none;
-    color: white;
-}
-td{
+  }
+
+  td {
+
     border-bottom: 1px;
-    font-size: xx-small;
     border-color: rgb(255, 255, 255);
-}
-button{
+  }
+
+  //add new + delete
+  button {
     margin: 5px;
-}
-.btn-close{
-  background-color: red;
-}
-.btn-warning{
-float: left;
-width: 95px;
-padding: 0%;
-margin-top: 4px;
-margin-bottom: 4px;
-border: none;
-background-color: aliceblue;
-box-shadow:1px 2px 15px 1px rgb(225, 240, 171);
-}
-h4{
-  background-color: rgb(8, 199, 78);margin: 0%;padding: 0%;border-radius: inherit;
-}
-.btn-danger{
+  }
+
+  .btn-close {
+
+    background-color: red;
+  }
+
+  //edit btn
+  .btn-warning {
+
     float: left;
-    width: 95px;
-    padding: 0%;
-    margin-top: 4px;
-    margin-bottom: 4px;
-    background-color: rgb(255, 40, 40);
-    box-shadow:1px 2px 15px 1px rgb(165, 163, 163);
-    }
-.btn-primary{
-    width: 200px;
-    background-color: rgb(76, 29, 247);
-    box-shadow:1px 2px 15px 1px rgb(12, 23, 243);
-    }
-    .modal-footer>.btn-primary{
-      font-size: small;
-      padding: 0;
-      height: 40px;
-      width: 100px;
-      background-color: rgb(76, 29, 247);
-      box-shadow:1px 2px 15px 1px rgb(12, 23, 243);
-      }
-@media screen and(max-width:500px) {
-    
-        table 
-          {
-            
-            width: 100%;
-            height: 100%;
-          }
-          
-          .mat-form-field 
-          {
-            font-size: 14px;
-            width: 100%;
-          }
-          
-          // td, th {
-            
-          //   color: rgb(54, 6, 6);
-          //   background-color: rgb(250, 240, 240);
-          // }
-        #mod{
-        
-          top: 50%;
-          left: 50%;
-          transform: translate(-45%,-45%);
-          text-align: center;
-          position:relative ;
-          z-index: 100;
-        }
-        th
-        {
-         
-          background-color: #003082;
-           border: none;
-        }
+    width: 49px;
+    padding: 0;
+    margin: 0;
+  }
 
-        td
-        {   
+  //delete btn
+  .btn-danger {
 
-            border-bottom: 1px;
-            border-color: rgb(255, 255, 255);
-        }
-        //add new + delete
-        button
-        { 
-          margin: 5px;
-        }
+    float: right;
+    width: 49px;
+    padding: 0;
+    margin: 0;
+  }
 
-        .btn-close
-        {
+  //add new btn
+  .btn-primary {
 
-          background-color: red;
-        }
-        //edit btn
-        .btn-warning
-        {
-          
-        float: left;
-        width: 49px;
-        padding: 0;
-        margin: 0;
-        }
-        //delete btn
-        .btn-danger
-        {
-          
-            float: right;
-            width: 49px;
-            padding: 0;
-            margin: 0;
-            }
-        //add new btn
-       .btn-primary
-       {
-        
-            width: 102px;
-            padding: 0; 
-            }
+    width: 102px;
+    padding: 0;
+  }
 
-       .modal
-       {
-                
-                border-radius: none;
-                width: 400px;
-              }         
-    }
-    @media screen and(max-width:400px){
-     .mat-elevation-z8{
+  .modal {
+
+    border-radius: none;
+    width: 400px;
+  }
+}
+
+//400 px and lower
+@media screen and(max-width:400px) {
+  .mat-elevation-z8 {
     width: 338px;
-     }
-     #field{
-      width: 338px;
-     }
-     .fade{
-      width: 90%;
-     }
-    }
-    span{
-      color: red;
-    }
-    td:hover{
-      color: rgb(60, 4, 247);
-      font-size: x-small;
-    }
-    button:hover
-    {
-      font-size: medium;
-     height: 30px;
-   
-    }
-    img{
-      width: 25%;
-      height: 25%;
-    }
-    #alert_text1{
-      width: 300px;
-      margin: 2px;
-      position: fixed;
-      color: black;
-      box-shadow: 2px 2px 5px 1px rgb(19, 211, 122);
-    } 
-    #button_id{
-      background-color: rgb(7, 189, 95);
-   }
-    #alert_text {
-      border-radius: 0%;
-       padding: 0px;
-       width: fit-content;
-       color: rgb(27, 27, 10);
-       box-shadow: 2px 2px 5px 1px rgb(183, 225, 66);
-       position: fixed;
-   }
+  }
+
+  #field {
+    width: 338px;
+  }
+
+  .fade {
+    width: 90%;
+  }
+}
+
+span {
+  color: red;
+}
+
+td:hover {
+  color: rgb(60, 4, 247);
+  font-size: x-small;
+}
+
+button:hover {
+  font-size: medium;
+  height: 30px;
+
+}
+
+img {
+  width: 25%;
+  height: 25%;
+}
+
+#alert_text1 {
+  width: 300px;
+  margin: 2px;
+  position: fixed;
+  color: black;
+  box-shadow: 2px 2px 5px 1px rgb(19, 211, 122);
+}
+
+#button_id {
+  background-color: rgb(7, 189, 95);
+}
+
+#alert_text {
+  border-radius: 0%;
+  padding: 0px;
+  width: fit-content;
+  color: rgb(27, 27, 10);
+  box-shadow: 2px 2px 5px 1px rgb(183, 225, 66);
+  position: fixed;
+}
 
 #alert_button {
   width: fit-content;
@@ -212,15 +272,16 @@ h4{
   border: 1px solid white;
   float: right;
 }
-#alert_button:hover{
+
+#alert_button:hover {
   background-color: aqua;
   color: red;
   border-color: red;
- 
+
 }
- 
-.spinner-border{
+
+.spinner-border {
   top: 50%;
   left: 50%;
-  position:fixed ;
+  position: fixed;
 }

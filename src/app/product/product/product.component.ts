@@ -51,8 +51,8 @@ export class ProductComponent implements OnInit, AfterViewInit{
     this.rr=!this.rr;
     this.ss=!this.ss;
     this.rr=!this.rr
-    let x={
-
+    let x=
+    {
       "token":`A12F7A58-842D-4111-A44D-5F8C4E1AA521`,
       "DevId":id
 }
