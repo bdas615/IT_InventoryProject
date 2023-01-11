@@ -34,20 +34,22 @@
 
             
             <!-- Display Product name-->
-            <ng-container class="ng-container" matColumnDef="DevType" >
-                <th mat-header-cell *matHeaderCellDef mat-sort-header> Product Name </th>
+            <ng-container matColumnDef="DevType" >
+                <th mat-header-cell *matHeaderCellDef mat-sort-header id="Product_text" > Product Name </th>
                 <td mat-cell *matCellDef="let row" routerLink="proD/{{row.DevId}}"> {{row.DevType}}</td>
             </ng-container>
             
             <!-- Display Owner name-->
             <ng-container matColumnDef="Owner">
-                <th mat-header-cell *matHeaderCellDef mat-sort-header style="text-align: center;"> Owner Name </th>
-                <td mat-cell *matCellDef="let row" routerLink="proD/{{row.DevId}}">{{row.Owner}}</td>
+                <!-- <th mat-header-cell *matHeaderCellDef mat-sort-header style="text-align: center;"> Owner Name </th> -->
+                <th mat-header-cell *matHeaderCellDef mat-sort-header id="Owner_text"> Owner Name </th>
+                <td mat-cell *matCellDef="let row" routerLink="proD/{{row.DevId}}" >{{row.Owner}}</td>
             </ng-container>
             
             <!-- Display Product location  name-->
             <ng-container matColumnDef="Location">
-                <th mat-header-cell *matHeaderCellDef mat-sort-header style="text-align: center;"> Location </th>
+                <!-- <th mat-header-cell *matHeaderCellDef mat-sort-header style="text-align: center;"> Location </th> -->
+                <th mat-header-cell *matHeaderCellDef mat-sort-header id="Location_text"> Location </th>
                 <td mat-cell *matCellDef="let row" routerLink="proD/{{row.DevId}}"> {{row.Location}} </td>
             </ng-container>
             <!-- button for add new data -->
@@ -96,7 +98,7 @@
     <!-- Button trigger modal -->
     <div id="mod">
         <h3>There is no any data.</h3>
-        <img src="https://demo.learncab.com/assets/images/no-data-found.png" alt="">
+        <img src="https://demo.learncab.com/assets/images/no-data-found.png" alt="no-data-found">
         <button type="button" class="btn btn-primary"routerLink="/productForm" >
             Add new data
         </button>
