@@ -1,51 +1,52 @@
 <ng-container *ngIf="condition.length !=0">
-    <mat-form-field  id="field" appearance="standard" >
+    <mat-form-field id="field" appearance="standard">
         <mat-label>Search</mat-label>
-        <input matInput (keyup)="applyFilter($event)"  placeholder="Ex. Laptop…" #input>
+        <input matInput (keyup)="applyFilter($event)" placeholder="Ex. Laptop…" #input>
     </mat-form-field>
+
     <!-- style="border:2px solid red;" -->
-<!-- Modal -->
-<div class="modal fade" id="staticBackdrop"[hidden]="ss" 
-        data-bs-backdrop="static" 
-        data-bs-keyboard="false" 
-        tabindex="-1" aria-labelledby="staticBackdropLabel" 
-        aria-hidden="true">
-  <div class="modal-dialog" >
-    <div class="modal-content" id="alert_text1" >
-      <div class="modal-header"style="background-color:green">
-        <h4 style="color:aqua;">Alert</h4>
-        <button type="button" class="btn-close" style="background-color: aquamarine;" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body">
-        if you want to delete this data then you please  Confirm.<br>
-        once if you are click on confirm it will permanently delete.
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" >Close</button>
-        <button type="button" class="btn btn-primary" (click)="deleteUser(ff)"data-bs-toggle="modal" data-bs-target="#staticBackdr">Understood</button>
-      </div>
+    <!-- Modal -->
+    <div class="modal fade" id="staticBackdrop" [hidden]="ss" data-bs-backdrop="static" data-bs-keyboard="false"
+        tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content" id="alert_text1">
+                <div class="modal-header" style="background-color:green">
+                    <h4 style="color:aqua;">Alert</h4>
+                    <button type="button" class="btn-close" style="background-color: aquamarine;"
+                        data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    if you want to delete this data then you please Confirm.<br>
+                    once if you are click on confirm it will permanently delete.
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary" (click)="deleteUser(ff)" data-bs-toggle="modal"
+                        data-bs-target="#staticBackdr">Understood</button>
+                </div>
+            </div>
+        </div>
     </div>
-  </div>
-</div>
-    
+
     <!-- material table for getting all data -->
     <div class="mat-elevation-z8" id="ngContainer">
-        <table mat-table [dataSource]="dataSource" matSort>
-
+      
+        <table mat-table [dataSource]="dataSource" matSort id="table1">
             
+
             <!-- Display Product name-->
-            <ng-container matColumnDef="DevType" >
-                <th mat-header-cell *matHeaderCellDef mat-sort-header id="Product_text" > Product Name </th>
+            <ng-container matColumnDef="DevType">
+                <th mat-header-cell *matHeaderCellDef mat-sort-header id="Product_text"> Product Name </th>
                 <td mat-cell *matCellDef="let row" routerLink="proD/{{row.DevId}}"> {{row.DevType}}</td>
             </ng-container>
-            
+
             <!-- Display Owner name-->
             <ng-container matColumnDef="Owner">
                 <!-- <th mat-header-cell *matHeaderCellDef mat-sort-header style="text-align: center;"> Owner Name </th> -->
                 <th mat-header-cell *matHeaderCellDef mat-sort-header id="Owner_text"> Owner Name </th>
-                <td mat-cell *matCellDef="let row" routerLink="proD/{{row.DevId}}" >{{row.Owner}}</td>
+                <td mat-cell *matCellDef="let row" routerLink="proD/{{row.DevId}}">{{row.Owner}}</td>
             </ng-container>
-            
+
             <!-- Display Product location  name-->
             <ng-container matColumnDef="Location">
                 <!-- <th mat-header-cell *matHeaderCellDef mat-sort-header style="text-align: center;"> Location </th> -->
@@ -55,25 +56,26 @@
             <!-- button for add new data -->
             <ng-container matColumnDef="Edit">
                 <th mat-header-cell *matHeaderCellDef>
-                    <button type="button" class="btn btn-primary"  routerLink="/productForm" id="addNewData">
+                    <button type="button" class="btn btn-primary" routerLink="/productForm" id="addNewData">
                         Add new data
                     </button>
+                    <button type="button" id="printBtn" class="btn btn-info" (click)="exportToExcel()">Print</button>  
                 </th>
+
                 <td mat-cell *matCellDef="let row">
                     <!-- Edit column for Edit any particular data -->
                     <div>
-                        <button type="button" class="btn btn-warning" routerLink="editFrom/{{row.DevId}}"  >
+                        <button type="button" class="btn btn-warning" routerLink="editFrom/{{row.DevId}}">
                             Edit
                         </button>
                         <!-- Delete column for Delete any particular data -->
-                        <button type="button" (click)="del(row.DevId)"  class="btn btn-danger"data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                        <button type="button" (click)="del(row.DevId)" class="btn btn-danger" data-bs-toggle="modal"
+                            data-bs-target="#staticBackdrop">
                             Delete
                         </button>
-                       
 
                     </div>
                 </td>
-                
             </ng-container>
 
 
@@ -86,7 +88,8 @@
                 <td class="mat-cell" colspan="4">No data matching the filter "{{input.value}}"</td>
             </tr>
         </table>
-        <mat-paginator  id="paginator" [pageSizeOptions]="[5, 10, 25, 100]" aria-label="Select page of users"></mat-paginator>
+        <mat-paginator id="paginator" [pageSizeOptions]="[5, 10, 25, 100]"
+            aria-label="Select page of users"></mat-paginator>
     </div>
 </ng-container>
 
@@ -94,51 +97,52 @@
 
 <!-- if there is no data then it show  -->
 <ng-container *ngIf="condition.length==0">
-    
+
     <!-- Button trigger modal -->
     <div id="mod">
         <h3>There is no any data.</h3>
         <img src="https://demo.learncab.com/assets/images/no-data-found.png" alt="no-data-found">
-        <button type="button" class="btn btn-primary"routerLink="/productForm" >
+        <button type="button" class="btn btn-primary" routerLink="/productForm">
             Add new data
         </button>
     </div>
-   </ng-container>
-   
-   
+</ng-container>
+
+
 <!-- alert -->
-<div    class="alert alert-danger "role="alert" class="modal fade" id="staticBackdr" data-bs-backdrop="static">
-    <div class="modal-dialog" >
-    <div  class="modal-content" id="alert_text"[hidden]="dd" >
-        <h4>Alert</h4>
-        A simple success alert—check it out!
-    
-        <div  class="modal-content" style="align-items: center;border:none " >
-          
-        <div id="button_id"  ><button type="button"id="alert_button"data-bs-dismiss="modal" aria-label="Close" (click)="alertfun()">ok</button>
-        </div> 
-    </div> 
-</div>
-<div class="modal-content"  style="top:250px"[hidden]="mm">
-<mat-progress-bar color="accent" mode="indeterminate"></mat-progress-bar>
-</div>
-</div>
-</div>
-<!-- alert -->
-<div    class="alert alert-danger " role="alert" class="modal fade" id="staticBackdrop" data-bs-backdrop="static">
+<div class="alert alert-danger " role="alert" class="modal fade" id="staticBackdr" data-bs-backdrop="static">
     <div class="modal-dialog">
-        
-    <div  class="modal-content"id="alert_text" [hidden]="dd"  >
-        
-  
+        <div class="modal-content" id="alert_text" [hidden]="dd">
+            <h4>Alert</h4>
+            A simple success alert—check it out!
+
+            <div class="modal-content" style="align-items: center;border:none ">
+
+                <div id="button_id"><button type="button" id="alert_button" data-bs-dismiss="modal" aria-label="Close"
+                        (click)="alertfun()">ok</button>
+                </div>
+            </div>
+        </div>
+        <div class="modal-content" style="top:250px" [hidden]="mm">
+            <mat-progress-bar color="accent" mode="indeterminate"></mat-progress-bar>
+        </div>
+    </div>
 </div>
-<div class="modal-content"  style="top:250px"[hidden]="mm">
-<mat-progress-bar color="accent" mode="indeterminate"></mat-progress-bar>
-</div>
-</div>
+<!-- alert -->
+<div class="alert alert-danger " role="alert" class="modal fade" id="staticBackdrop" data-bs-backdrop="static">
+    <div class="modal-dialog">
+
+        <div class="modal-content" id="alert_text" [hidden]="dd">
+
+
+        </div>
+        <div class="modal-content" style="top:250px" [hidden]="mm">
+            <mat-progress-bar color="accent" mode="indeterminate"></mat-progress-bar>
+        </div>
+    </div>
 </div>
 
 <!-- spiner -->
 <div [hidden]="spin" class="spinner-border text-primary" role="status">
-  <span class="visually-hidden">Loading...</span>
+    <span class="visually-hidden">Loading...</span>
 </div>

@@ -12,6 +12,7 @@ import { HttpClient } from '@angular/common/http';
 import { ActivatedRoute, Router } from '@angular/router';
 import { tap } from 'rxjs';
 import { Expansion } from '@angular/compiler';
+import * as XLSX from 'xlsx';
 
 export interface UserData {
   DevId:string
@@ -114,6 +115,18 @@ console.log(x)
     if (this.dataSource.paginator) {
       this.dataSource.paginator.firstPage();
     }
+  }
+
+  name = 'ExcelSheet.xlsx';
+  exportToExcel()
+  {
+    let element = document.getElementById('table1');
+    const worksheet: XLSX.WorkSheet = XLSX.utils.table_to_sheet(element);
+
+    const book: XLSX.WorkBook = XLSX.utils.book_new();
+    XLSX.utils.book_append_sheet(book, worksheet, 'Sheet1');
+
+    XLSX.writeFile(book, this.name);
   }
 }
 
