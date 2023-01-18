@@ -57,19 +57,19 @@
             <ng-container matColumnDef="Edit">
                 <th mat-header-cell *matHeaderCellDef>
                     <button type="button" class="btn btn-primary" routerLink="/productForm" id="addNewData">
-                        Add new data
+                        Add New 
                     </button>
-                    <button type="button" id="printBtn" class="btn btn-info" (click)="exportToExcel()">Print</button>  
+                    <button type="button" class="btn btn-info" id="printBtn"  (click)="exportToExcel()">Print</button>  
                 </th>
 
                 <td mat-cell *matCellDef="let row">
                     <!-- Edit column for Edit any particular data -->
                     <div>
-                        <button type="button" class="btn btn-warning" routerLink="editFrom/{{row.DevId}}">
+                        <button type="button" class="btn btn-warning" id="editButton" routerLink="editFrom/{{row.DevId}}">
                             Edit
                         </button>
                         <!-- Delete column for Delete any particular data -->
-                        <button type="button" (click)="del(row.DevId)" class="btn btn-danger" data-bs-toggle="modal"
+                        <button type="button" (click)="del(row.DevId)" id="deleteButton" class="btn btn-danger" data-bs-toggle="modal"
                             data-bs-target="#staticBackdrop">
                             Delete
                         </button>

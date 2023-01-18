@@ -101,6 +101,8 @@ export class ProductFormComponent implements OnInit {
   get CellNumberfunction(){
     return this.userLogin.get("CellNumber")
   }
+
+
   get devTypefunction1(){
     let x= this.userLogin.get("DevType")
     x=x?.value
@@ -129,7 +131,8 @@ export class ProductFormComponent implements OnInit {
      return true;
      console.log('my null')
     }
-    else{
+    else
+    {
      return false;
     }
  }

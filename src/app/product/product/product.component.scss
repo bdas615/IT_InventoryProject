@@ -2,7 +2,6 @@
 {
   #printBtn
   {
-    border:2px solid red;
     position: relative;
     margin-left: 5px;
     margin-right: 0px;
@@ -11,7 +10,6 @@
   {
     width: 200px;
     height: 40px;
-    border:2px solid rgb(0, 255, 13);
   }
 }
 
@@ -19,7 +17,6 @@
 {
   #printBtn
   {
-    border:2px solid red;
     position: relative;
     margin-left: 5px;
     margin-right: 0px;
@@ -28,7 +25,6 @@
   {
     width: 195px;
     height: 40px;
-    border:2px solid rgb(0, 255, 13);
   }
 }
 
@@ -36,16 +32,14 @@
 {
   #printBtn
   {
-    border:2px solid red;
     position: relative;
     margin-left: 5px;
     margin-right: 0px;
   }
   #addNewData
   {
-    width: 190px;
+    width: 195px;
     height: 40px;
-    border:2px solid rgb(0, 255, 13);
   }
 }
 
@@ -53,16 +47,14 @@
 {
   #printBtn
   {
-    border:2px solid red;
     position: relative;
     margin-left: 5px;
     margin-right: 0px;
   }
   #addNewData
   {
-    width: 190px;
+    width: 195px;
     height: 40px;
-    border:2px solid rgb(0, 255, 13);
   }
 }
 
@@ -70,17 +62,15 @@
 {
   #printBtn
   {
-    border:2px solid red;
     position: relative;
     margin-left: 5px;
     margin-right: 0px;
-    width: 22%;
+    width: auto;
   }
   #addNewData
   {
-    width: 190px;
+    width: 195px;
     height: 40px;
-    border:2px solid rgb(0, 255, 13);
   }
 }
 
@@ -88,7 +78,6 @@
 {
   #printBtn
   {
-    border:2px solid red;
     position: relative;
     margin-left: 5px;
     margin-right: 0px;
@@ -97,76 +86,38 @@
   {
     width: 190px;
     height: 40px;
-    border:2px solid rgb(0, 255, 13);
   }
 }
 
-
-@media screen and(max-width:1433px)
+@media screen and(max-width:1437.9px)
 {
   #printBtn
   {
-    border:2px solid red;
     position: relative;
     margin-left: 5px;
     margin-right: 0px;
-  }
-  #addNewData
-  {
-    width: 190px;
-    height: 40px;
-    border:2px solid rgb(0, 255, 13);
-  }
-}
-
-@media screen and(max-width:1419px)
-{
-  #printBtn
-  {
-    border:2px solid red;
-    position: relative;
-    margin-left: 5px;
-    margin-right: 0px;
-  }
-  #addNewData
-  {
-    width: 180px;
-    height: 40px;
-    border:2px solid rgb(0, 255, 13);
-  }
-}
-
-@media screen and(max-width:1419px)
-{
-  #printBtn
-  {
-    border:2px solid red;
-    position: relative;
-    margin-left: 5px;
-    margin-right: 0px;
-  }
-  #addNewData
-  {
-    width: 180px;
-    height: 40px;
-    border:2px solid rgb(0, 255, 13);
-  }
-}
-
-@media screen and(max-width:1419px)
-{
-  #printBtn
-  {
-    border:2px solid red;
-    position: relative;
-    margin-left: 5px;
-    margin-right: 0px;
+    width: auto;
   }
   #addNewData
   {
     width: 185px;
     height: 40px;
-    border:2px solid rgb(0, 255, 13);
+  }
+}
+
+@media screen and(max-width:1412.9px)
+{
+  #printBtn
+  {
+    position: relative;
+    margin-left: 5px;
+    margin-right: 0px;
+    width: auto;
+  }
+  #addNewData
+  {
+    width: 180px;
+    height: 40px;
   }
 }
 
@@ -174,71 +125,843 @@
 {
   #printBtn
   {
-    border:2px solid red;
     position: relative;
     margin-left: 5px;
     margin-right: 0px;
-  }
-  #addNewData
-  {
-    width: 180px;
-    height: 40px;
-    border:2px solid rgb(0, 255, 13);
-  }
-}
-
-@media screen and(max-width:1355px)
-{
-  #printBtn
-  {
-    border:2px solid red;
-    position: relative;
-    margin-left: 5px;
-    margin-right: 0px;
+    width: auto;
   }
   #addNewData
   {
     width: 175px;
     height: 40px;
-    border:2px solid rgb(0, 255, 13);
   }
 }
 
-@media screen and(max-width:1324px)
+@media screen and(max-width:1363.9px)
 {
   #printBtn
   {
-    border:2px solid red;
     position: relative;
     margin-left: 5px;
     margin-right: 0px;
+    width: auto;
   }
   #addNewData
   {
     width: 170px;
     height: 40px;
-    border:2px solid rgb(0, 255, 13);
   }
 }
 
-@media screen and(max-width:1292px)
+@media screen and(max-width:1338.9px)
 {
   #printBtn
   {
-    border:2px solid red;
     position: relative;
     margin-left: 5px;
     margin-right: 0px;
+    width: auto;
   }
   #addNewData
   {
     width: 165px;
     height: 40px;
-    border:2px solid rgb(0, 255, 13);
   }
 }
 
-table {
+@media screen and(max-width:1313px)
+{
+  #printBtn
+  {
+    position: relative;
+    margin-left: 5px;
+    margin-right: 0px;
+    width: auto;
+  }
+  #addNewData
+  {
+    width: 160px;
+    height: 40px;
+  }
+}
+
+@media screen and(max-width:1289px)
+{
+  #printBtn
+  {
+    position: relative;
+    margin-left: 5px;
+    margin-right: 0px;
+    width: auto;
+  }
+  #addNewData
+  {
+    width: 155px;
+    height: 40px;
+  }
+}
+
+@media screen and(max-width:1264px)
+{
+  #printBtn
+  {
+    margin-left:5px;
+    margin-right:0px;
+    width:auto;
+  }
+  #addNewData
+  {
+    width:150px;
+    height:40px;
+  }
+}
+
+@media screen and(max-width:1239px)
+{
+  #printBtn
+  {
+    margin-left:5px;
+    margin-right:0px;
+    width:auto;
+  }
+  #addNewData
+  {
+    width:145px;
+    height:40px;
+  }
+}
+
+@media screen and(max-width:1215px)
+{
+  #printBtn
+  {
+    margin-left:5px;
+    margin-right:0px;
+    width:auto;
+  }
+  #addNewData
+  {
+    width:140px;
+    height:40px;
+  }
+}
+
+@media screen and(max-width:1190px)
+{
+  #printBtn
+  {
+    margin-left:5px;
+    margin-right:0px;
+    width:auto;
+  }
+  #addNewData
+  {
+    width:135px;
+    height:40px;
+  }
+}
+
+@media screen and(max-width:1165px)
+{
+  #printBtn
+  {
+    margin-left: 5px;
+    margin-right: 0px;
+    width:auto;
+  }
+  #addNewData
+  {
+    width:130px;
+    height:40px;
+  }
+}
+
+@media screen and(max-width:1158.9px)
+{
+  #printBtn
+  {
+    
+    margin-left: 5px;
+    margin-right: 0px;
+    width:auto;
+  }
+  #addNewData
+  {
+    width:130px;
+    height:38px;
+    
+  }
+  #editButton
+  {
+    width:90px;
+  }
+  #deleteButton
+  {
+    width:90px;
+  }
+}
+
+@media screen and(max-width:1140.9px)
+{
+  #printBtn
+  {
+      margin-left: 5px;
+      margin-right: 0px;
+      width:60px;
+  }
+  #addNewData
+  {
+    width:130px;
+    height:38px;
+  }
+}
+
+@media screen and(max-width:1133.9px)
+{
+  #printBtn
+  {
+      margin-left: 5px;
+      margin-right: 0px;
+      width:59px;
+  }
+  #addNewData
+  {
+    width:129px;
+    height:38px;
+  }
+}
+
+@media screen and(max-width:1123.9px)
+{
+  #printBtn
+  {
+      margin-left: 5px;
+      margin-right: 0px;
+      width:58px;
+  }
+  #addNewData
+  {
+    width:128px;
+    height:38px;
+  }
+}
+
+@media screen and(max-width:1113.9px)
+{
+  #printBtn
+  {
+      margin-left: 5px;
+      margin-right: 0px;
+      width:57px;
+  }
+  #addNewData
+  {
+    width:127px;
+    height:38px;
+  }
+}
+
+@media screen and(max-width:1109px)
+{
+  #editButton
+  {
+    width:89px;
+  }
+  #deleteButton
+  {
+    width:89px;
+  }
+}
+
+@media screen and(max-width:1103px)
+{
+  #printBtn
+  {
+      margin-left: 5px;
+      margin-right: 0px;
+      width:56px;
+  }
+  #addNewData
+  {
+    width:126px;
+    height:38px;
+  }
+  #editButton
+  {
+    width:88px;
+  }
+  #deleteButton
+  {
+    width:88px;
+  }
+}
+
+@media screen and(max-width:1094px)
+{
+  #printBtn
+  {
+      margin-left: 5px;
+      margin-right: 0px;
+      width:55px;
+  }
+  #addNewData
+  {
+    width:126px;
+    height:38px;
+  }
+  #editButton
+  {
+    width:88px;
+  }
+  #deleteButton
+  {
+    width:88px;
+  }
+}
+
+@media screen and(max-width:1089px)
+{
+  #printBtn
+  {
+      font-size: large;
+      margin-left: 5px;
+      margin-right: 0px;
+      width:auto;
+      font-size: medium;
+  }
+  #addNewData
+  {
+    width: auto;
+    font-size: medium;
+    height:38px;
+  }
+  #editButton
+  {
+    width:87px;
+  }
+  #deleteButton
+  {
+    width:87px;
+  }
+}
+
+@media screen and(max-width:1084px)
+{
+  #printBtn
+  {
+    font-size: larger;
+    margin-left: 5px;
+    margin-right: 0px;
+    width: auto;
+  }
+  #addNewData
+  {
+    width: auto;
+    font-size: larger;
+    height: 38px
+  }
+  #editButton
+  {
+    width:85px;
+  }
+  #deleteButton
+  {
+    width:85px;
+  }
+}
+
+@media screen and(max-width:1059px)
+{
+  #printBtn
+  {
+    font-size: larger;
+    margin-left: 5px;
+    margin-right: 0px;
+    width: auto;
+  }
+  #addNewData
+  {
+    width: auto;
+    font-size: larger;
+    height: 38px
+  }
+  #editButton
+  {
+    width:83px;
+  }
+  #deleteButton
+  {
+    width:83px;
+  }
+}
+
+@media screen and(max-width:1039px)
+{
+  #printBtn
+  {
+    font-size: larger;
+    margin-left: 5px;
+    margin-right: 0px;
+    width: auto;
+  }
+  #addNewData
+  {
+    width: auto;
+    font-size: larger;
+    height: 38px;
+  }
+  #editButton
+  {
+    width: 80px;
+  }
+  #deleteButton
+  {
+    width: 80px;
+  }
+}
+
+@media screen and(max-width:1010px)
+{
+  #printBtn
+  {
+    font-size: larger;
+    margin-left: 5px;
+    margin-right: 0px;
+    width: auto;
+  }
+  #addNewData
+  {
+    width: auto;
+    font-size: larger;
+    height: 38px;
+  }
+  #editButton
+  {
+    width: 75px;
+  }
+  #deleteButton
+  {
+    width: 75px;
+  }
+}
+
+@media screen and(max-width:1009px)
+{
+  #printBtn
+  {
+    font-size: larger;
+    margin-left: 5px;
+    margin-right: 0px;
+    width: auto;
+  }
+  #addNewData
+  {
+    width: auto;
+    font-size: larger;
+    height: 38px;
+  }
+}
+
+@media screen and(max-width:990px)
+{
+  #printBtn
+  {
+    font-size: larger;
+    margin-left: 5px;
+    margin-right: 0px;
+    width: auto;
+  }
+  #addNewData
+  {
+    width: auto;
+    font-size: larger;
+    height: 38px;
+  }
+}
+
+
+@media screen and(max-width:961px)
+{
+  #printBtn
+  {
+    font-size: larger;
+    margin-left: 5px;
+    margin-right: 0px;
+    width: auto;
+  }
+  #addNewData
+  {
+    width: auto;
+    font-size: larger;
+    height: 38px;
+  }
+  #editButton
+  {
+    width: 73px;
+  }
+  #deleteButton
+  {
+    width: 73px;
+  }
+}
+
+@media screen and(max-width:955px)
+{
+  #printBtn
+  {
+    font-size: larger;
+    margin-left: 5px;
+    margin-right: 0px;
+    width: auto;
+  }
+  #addNewData
+  {
+    width: auto;
+    font-size: larger;
+    height: 38px;
+  }
+  #editButton
+  {
+    width: 73px;
+  }
+  #deleteButton
+  {
+    width: 73px;
+  }
+}
+
+@media screen and(max-width:942px)
+{
+  #printBtn
+  {
+    margin-left: 5px;
+    margin-right: 0px;
+    width: auto;
+  }
+  #addNewData
+  {
+    width: auto;
+    height: 38px;
+  }
+  #editButton
+  {
+    width: 72px;
+  }
+  #deleteButton
+  {
+    width: 72px;
+  }
+}
+
+@media screen and(max-width:932px)
+{
+  #printBtn
+  {
+    margin-left: 5px;
+    margin-right: 0px;
+    width: auto;
+  }
+  #addNewData
+  {
+    width: auto;
+    height: 38px;
+  }
+  #editButton
+  {
+    width: 71px;
+  }
+  #deleteButton
+  {
+    width: 71px;
+  }
+}
+
+@media screen and(max-width:921px)
+{
+  #printBtn
+  {
+    margin-left: 5px;
+    margin-right: 0px;
+    height: 38px;
+    width: auto;
+  }
+  #addNewData
+  {
+    width: auto;
+    height: 38px;
+  }
+  #editButton
+  {
+    width: 70px;
+  }
+  #deleteButton
+  {
+    width: 70px;
+  }
+}
+
+@media screen and(max-width:911px)
+{
+  #printBtn
+  {
+    margin-left: 5px;
+    margin-right: 0px;
+    height: 38px;
+    width: auto;
+  }
+  #addNewData
+  {
+    width: auto;
+    height: 38px;
+  }
+  #editButton
+  {
+    width: 69px;
+  }
+  #deleteButton
+  {
+    width: 69px;
+  }
+}
+
+@media screen and(max-width:907px)
+{
+  #printBtn
+  {
+    margin-left: 5px;
+    margin-right: 0px;
+    height: 38px;
+    width: 58px;
+  }
+  #addNewData
+  {
+    width: 86px;
+    height: 38px;
+  }
+  #editButton
+  {
+    width: 69px;
+  }
+  #deleteButton
+  {
+    width: 69px;
+  }
+}
+
+@media screen and(max-width:906px)
+{
+  #printBtn
+  {
+    margin-left: 5px;
+    margin-right: 0px;
+    height: 38px;
+    width: auto;
+  }
+  #addNewData
+  {
+    width: 85px;
+    height: 38px;
+  }
+  #editButton
+  {
+    width: 59px;
+  }
+  #deleteButton
+  {
+    width: 59px;
+  }
+}
+
+@media screen and(max-width:889px)
+{
+  #addNewData
+  {
+    width: 82px;
+    height: 38px;
+    font-size: small;
+  }
+}
+
+@media screen and(max-width:874px)
+{
+  #addNewData
+  {
+    width: 81px;
+    height: 38px;
+    font-size: small;
+  }
+}
+
+@media screen and(max-width:869px)
+{
+  #addNewData
+  {
+    width: 80px;
+    height: 38px;
+    font-size: small;
+  }
+}
+
+@media screen and(max-width:864px)
+{
+  #addNewData
+  {
+    width: 79px;
+    height: 38px;
+    font-size: small;
+  }
+}
+
+@media screen and(max-width:859px)
+{
+  #addNewData
+  {
+    width: 78px;
+    height: 38px;
+    font-size: small;
+  }
+}
+
+@media screen and(max-width:857px)
+{
+  #printBtn
+  {
+    margin-left: 5px;
+    margin-right: 0px;
+    height: 38px;
+    width: auto;
+  }
+  #addNewData
+  {
+    width: 77px;
+    height: 38px;
+  }
+  #editButton
+  {
+    width: 60px;
+  }
+  #deleteButton
+  {
+    width: 60px;
+  }
+}
+
+@media screen and(max-width:856.9px)
+{
+  #addNewData
+  {
+    width: 76px;
+    height: 38px;
+    font-size: small;
+  }
+}
+
+@media screen and(max-width:827px)
+{
+  #printBtn
+  {
+    font-size: 10px;
+    margin-left: 5px;
+    margin-right: 0px;
+    height: 38px;
+    width: 46px;
+  }
+  #addNewData
+  {
+    width: 75px;
+    font-size: 7px;
+    height: 38px;
+  }
+  #editButton
+  {
+    width: 56px;
+  }
+  #deleteButton
+  {
+    width: 56px;
+  }
+}
+
+@media screen and(max-width:793px)
+{
+  #printBtn
+  {
+    font-size: 10px;
+    margin-left: 5px;
+    margin-right: 0px;
+    height: 38px;
+    width: 46px;
+  }
+  #addNewData
+  {
+    width: 70px;
+    font-size: 6px;
+    height: 38px;
+  }
+  #editButton
+  {
+    width: 54px;
+  }
+  #deleteButton
+  {
+    width: 54px;
+  }
+}
+
+@media screen and(max-width:768px)
+{
+  #printBtn
+  {
+    font-size: 10px;
+    margin-left: 5px;
+    margin-right: 0px;
+    height: 38px;
+    width: 46px;
+  }
+  #addNewData
+  {
+    width: 66px;
+    font-size: 6px;
+    height: 38px;
+  }
+  #editButton
+  {
+    width: 52px;
+  }
+  #deleteButton
+  {
+    width: 52px;
+  }
+}
+
+@media screen and(max-width:707px)
+{
+  #printBtn
+  {
+    font-size: 10px;
+    margin-left: 5px;
+    margin-right: 0px;
+    height: 38px;
+    width: 46px;
+  }
+  #addNewData
+  {
+    width: 66px;
+    font-size: 6px;
+    height: 38px;
+  }
+  #editButton
+  {
+    width: 52px;
+  }
+  #deleteButton
+  {
+    width: 52px;
+  }
+}
+
+table 
+{
   width: 100%;
 }
 
@@ -281,12 +1004,13 @@ th {
 
 td {
   border-bottom: 1px;
-  font-size: xx-small;
+  font-size: medium;
   border-color: rgb(255, 255, 255);
 }
 
 button {
   margin: 5px;
+  border:1px solid black;
 }
 
 .btn-close {
@@ -679,12 +1403,13 @@ span {
 td:hover {
   color: rgb(60, 4, 247);
   font-size: x-small;
+  cursor: pointer;
 }
 
 button:hover {
+  color:black;
   font-size: medium;
-  height: 30px;
-
+  background-color:yellow;
 }
 
 img {
