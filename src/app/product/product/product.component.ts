@@ -20,6 +20,7 @@ export interface UserData {
   Owner:string,
   Location:string,
 }
+
 @Component({
   selector: 'app-product',
   templateUrl: './product.component.html',
@@ -39,6 +40,8 @@ export class ProductComponent implements OnInit, AfterViewInit{
    ss!:boolean;
    spin=true;
    y!:any;
+   count:number = 0;
+
    del(a:any){
     this.rr=true;
     this.ss=false;
@@ -57,7 +60,6 @@ export class ProductComponent implements OnInit, AfterViewInit{
       "token":`A12F7A58-842D-4111-A44D-5F8C4E1AA521`,
       "DevId":id
 }
-console.log(x)
     setTimeout(()=>{
       this.htt.post<any>("https://tools.brandinstitute.com/wsInventory/wsInventory.asmx/Device_Del",x).pipe(catchError((err:any)=>{
         this.rout.navigate(['/error']);

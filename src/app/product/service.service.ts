@@ -18,10 +18,14 @@ export class ServiceService {
   con=true;
  
   serFun(){
-   return this.http.post<any>("https://tools.brandinstitute.com/wsInventory/wsInventory.asmx/Device_GetAll",{token:"A12F7A58-842D-4111-A44D-5F8C4E1AA521"}).pipe(catchError((err:any)=>{
+   return this.http.post<any>("https://tools.brandinstitute.com/wsInventory/wsInventory.asmx/Device_GetAll",{token:"A12F7A58-842D-4111-A44D-5F8C4E1AA521"})
+    .pipe(catchError((err:any)=>
+    {
     this.rout.navigate(['/error']);
     return err
-  }),map((res:xx)=>{
+  }
+  ),map((res:xx)=>
+  {
     return res.data;
    }))
  }

@@ -60,7 +60,8 @@ export class ProductFormComponent implements OnInit {
     return this.userLogin.get("DevTypeOther")
   }
   get serialfunction(){
-    return this.userLogin.get("Serial")
+    return this.userLogin.get("Serial");
+
   }
   get ownerfunction(){
     return this.userLogin.get("Owner")
@@ -84,7 +85,7 @@ export class ProductFormComponent implements OnInit {
     return this.userLogin.get("ServiceExpDate")
   }
   get sizefunction(){
-    return this.userLogin.get("Size")
+    return this.userLogin.get("Size");
   }
   get tonerfunction(){
     return this.userLogin.get("Toner")
@@ -93,13 +94,13 @@ export class ProductFormComponent implements OnInit {
     return this.userLogin.get("Value")
   }
   get MacAddressfunction(){
-    return this.userLogin.get("MacAddress")
+    return this.userLogin.get("MacAddress");
   }
   get IPAddressfunction(){
-    return this.userLogin.get("IPAddress")
+    return this.userLogin.get("IPAddress");
   }
   get CellNumberfunction(){
-    return this.userLogin.get("CellNumber")
+    return this.userLogin.get("CellNumber");
   }
 
 

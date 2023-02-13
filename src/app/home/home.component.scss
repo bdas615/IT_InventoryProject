@@ -335,12 +335,14 @@
         margin: 12px;
         width: 95%;
         float: left;
+    
     }
 
     .s 
     {
         position: relative;
         top: 10%; 
+       
     }
 
     mat-toolbar {
@@ -349,6 +351,7 @@
         background-image:linear-gradient(to right,#003082,#5788db);
         height: 5%;
         z-index: 2;
+       
     }
 
     span 

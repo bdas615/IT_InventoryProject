@@ -1,7 +1,11 @@
 .d-flex>.spinner-border
 {
-    margin-top: 20%;
-    
+    margin-top: 20%;   
+}
+
+#printButton
+{
+    background-color: #194287;
 }
 
 @media screen and (max-width:1812px)
@@ -1095,33 +1099,81 @@ tr>td {
     }
 }
 
-@media screen and (max-width:363px)
+@media screen and (max-width:421px)
 {
-    .my-class1
+    .main-table div table tr td
     {
-        width: 40%!important;
-        min-width: unset!important;
-    }
-        
-    .my-class2
-    {
-        width: 40%!important;
-      min-width: unset!important;
-    }
-        
-    .my-class3
-    {
-        width: 40%!important;
-      min-width: unset!important;
+        font-size: 11px;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     }
 }
 
-@media screen and (max-width:335px)
+@media screen and (max-width:391px)
 {
-    #headerLabel
+
+    .main-table div table tr td
     {
-        font-size : x-large;
+        font-size: 11px;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     }
-    
+
+    #update 
+    {
+        padding: 0px;
+        margin-left: -1px;
+        width: 52px!important;
+        min-width: unset!important;
+        font-size: 11px
+    }
+        
+    #delete 
+    {
+        padding: 0px;
+        margin-left: -6px;
+        width: 49px!important;
+        min-width: unset!important;
+        font-size: 11px
+    }
+        
+    #print 
+    {
+        padding: 0px;
+        margin-left: -5px;
+        width: 50px!important;
+        min-width: unset!important;
+        font-size: 11px
+    }
 }
+
+
+
+// @media screen and (max-width:363px)
+// {
+//     .my-class1
+//     {
+//         width: 40%!important;
+//         min-width: unset!important;
+//     }
+        
+//     .my-class2
+//     {
+//         width: 40%!important;
+//       min-width: unset!important;
+//     }
+        
+//     .my-class3
+//     {
+//         width: 40%!important;
+//       min-width: unset!important;
+//     }
+// }
+
+// @media screen and (max-width:335px)
+// {
+//     #headerLabel
+//     {
+//         font-size : x-large;
+//     }
+    
+// }
 
